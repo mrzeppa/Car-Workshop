@@ -8,24 +8,47 @@ import javax.persistence.*;
 public class Cars {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "carId")
-    private int carId;
 
     @Column(name = "carModelId")
     private int carModelId;
 
+    @ManyToOne
+    @JoinColumn(name = "carId")
+    private Cars cars;
+
     @Column(name = "course")
     private String course;
 
-    @Column(name = "userId")
-    private int userId;
+    @ManyToOne
+    @JoinColumn(name = "userId")
+    private Users users;
 
-    public int getCarId() {
-        return carId;
+    @ManyToOne
+    @JoinColumn(name = "carModelId", insertable = false, updatable = false)
+    private CarModels carModels;
+
+    public CarModels getCarModels() {
+        return carModels;
     }
 
-    public void setCarId(int carId) {
-        this.carId = carId;
+    public void setCarModels(CarModels carModels) {
+        this.carModels = carModels;
+    }
+
+    public Users getUsers() {
+        return users;
+    }
+
+    public void setUsers(Users users) {
+        this.users = users;
+    }
+
+    public Cars getCars() {
+        return cars;
+    }
+
+    public void setCars(Cars cars) {
+        this.cars = cars;
     }
 
     public int getCarModelId() {
@@ -44,11 +67,4 @@ public class Cars {
         this.course = course;
     }
 
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
 }

@@ -1,6 +1,7 @@
 package com.javawebtutor.Models;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "states")
@@ -12,6 +13,9 @@ public class States {
 
     @Column(name = "name")
     private String name;
+
+    @OneToMany(mappedBy = "states",fetch = FetchType.EAGER)
+    private List<RepairsState> repairsStates;
 
     public int getStateId() {
         return stateId;

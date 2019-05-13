@@ -1,7 +1,9 @@
 package com.javawebtutor.Models;
 
 
+import javax.management.relation.Role;
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -11,8 +13,9 @@ public class Users {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userId;
 
-    @Column(name = "roleId")
-    private int roleId;
+    @ManyToOne
+    @JoinColumn(name = "roleId")
+    private Roles roles;
 
     @Column(name = "name")
     private String name;
@@ -30,20 +33,31 @@ public class Users {
     @Column(name = "password")
     private String password;
 
+    @OneToMany(mappedBy = "users",fetch = FetchType.EAGER)
+    private List<Cars> cars;
+
+    public Roles getRoles() {
+        return roles;
+    }
+
+    public List<Cars> getCars() {
+        return cars;
+    }
+
+    public void setCars(List<Cars> cars) {
+        this.cars = cars;
+    }
+
+    public void setRoles(Roles roles) {
+        this.roles = roles;
+    }
+
     public int getUserId() {
         return userId;
     }
 
     public void setUserId(int userId) {
         this.userId = userId;
-    }
-
-    public int getRoleId() {
-        return roleId;
-    }
-
-    public void setRoleId(int roleId) {
-        this.roleId = roleId;
     }
 
     public String getName() {

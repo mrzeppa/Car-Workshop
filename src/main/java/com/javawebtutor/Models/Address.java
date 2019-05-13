@@ -29,6 +29,8 @@ public class Address {
     @OneToMany(mappedBy = "address",fetch = FetchType.EAGER)
     private List<Users> users;
 
+
+
     public Address() {
     }
 

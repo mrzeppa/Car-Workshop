@@ -28,6 +28,13 @@ public class ClientEditProfileController extends Controller implements Initializ
     @FXML private PasswordField password;
 
     public void initialize(URL location, ResourceBundle resources) {
+//        relation tests ------- it works.
+//        Session session = factory.getCurrentSession();
+//        session.getTransaction().begin();
+//        Users user;
+//        user = session.get(Users.class, LogInController.loggedUserId);
+//        System.out.println(user.getCars().get(0).getCarModels().getCarMarks().getMarkName());
+//        session.close();
         loadData();
     }
 

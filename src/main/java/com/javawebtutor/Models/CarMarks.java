@@ -16,8 +16,16 @@ public class CarMarks {
     @Column(name = "markName")
     private String markName;
 
-//    @OneToMany(mappedBy = "carmarks")
-//    private List<CarModels> carModels = new ArrayList<CarModels>();
+    @OneToMany(mappedBy = "carMarks",fetch = FetchType.EAGER)
+    private List<CarModels> carModels;
+
+    public List<CarModels> getCarModels() {
+        return carModels;
+    }
+
+    public void setCarModels(List<CarModels> carModels) {
+        this.carModels = carModels;
+    }
 
     public int getCarMarkId() {
         return carMarkId;

@@ -40,7 +40,6 @@ public class RegisterController extends Controller {
             u1.setAddress(ad1);
             u1.setName(name.getText());
             u1.setSurname(surname.getText());
-            u1.setRoleId(1);
             u1.setLogin(login.getText());
             u1.setPassword(password.getText());
             session.save(u1);

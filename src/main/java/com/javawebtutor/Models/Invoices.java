@@ -2,6 +2,7 @@ package com.javawebtutor.Models;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "invoices")
@@ -22,6 +23,9 @@ public class Invoices {
 
     @Column(name = "description")
     private String description;
+
+    @OneToMany(mappedBy = "invoices",fetch = FetchType.EAGER)
+    private List<Repairs> repairs;
 
     public int getInvoiceId() {
         return invoiceId;

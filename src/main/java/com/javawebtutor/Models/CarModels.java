@@ -16,10 +16,20 @@ public class CarModels {
     @Column(name = "modelName")
     private String modelName;
 
-    @Column(name = "carMarkId")
-    private int carMarkId;
+    @ManyToOne
+    @JoinColumn(name = "carMarkId")
+    private CarMarks carMarks;
 
+    @OneToMany(mappedBy = "carModels",fetch = FetchType.EAGER)
+    private List<Cars> Cars;
 
+    public List<com.javawebtutor.Models.Cars> getCars() {
+        return Cars;
+    }
+
+    public void setCars(List<com.javawebtutor.Models.Cars> cars) {
+        Cars = cars;
+    }
 
     public int getCarModelId() {
         return carModelId;
@@ -37,11 +47,11 @@ public class CarModels {
         this.modelName = modelName;
     }
 
-    public int getCarMarkId() {
-        return carMarkId;
+    public com.javawebtutor.Models.CarMarks getCarMarks() {
+        return carMarks;
     }
 
-    public void setCarMarkId(int carMarkId) {
-        this.carMarkId = carMarkId;
+    public void setCarMarks(com.javawebtutor.Models.CarMarks carMarks) {
+        carMarks = carMarks;
     }
 }

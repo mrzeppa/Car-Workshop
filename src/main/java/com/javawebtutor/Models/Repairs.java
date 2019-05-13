@@ -2,6 +2,7 @@ package com.javawebtutor.Models;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "repairs")
@@ -20,6 +21,13 @@ public class Repairs {
 
     @Column(name = "price")
     private int price;
+
+    @ManyToOne
+    @JoinColumn(name = "repairId", insertable = false, updatable = false)
+    private Invoices invoices;
+
+    @OneToMany(mappedBy = "repairId",fetch = FetchType.EAGER)
+    private List<RepairsState> RepairState;
 
     public int getRepairId() {
         return repairId;
