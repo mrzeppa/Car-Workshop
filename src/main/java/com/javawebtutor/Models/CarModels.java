@@ -20,11 +20,19 @@ public class CarModels {
     @JoinColumn(name = "carMarkId")
     private CarMarks carMarks;
 
-    @OneToMany(mappedBy = "carModels",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "carModels",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Cars> Cars;
 
     public List<com.javawebtutor.Models.Cars> getCars() {
         return Cars;
+    }
+
+    public CarModels() {
+    }
+
+    public CarModels(String modelName, CarMarks carMarks) {
+        this.modelName = modelName;
+        this.carMarks = carMarks;
     }
 
     public void setCars(List<com.javawebtutor.Models.Cars> cars) {

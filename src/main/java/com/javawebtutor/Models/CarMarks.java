@@ -19,6 +19,12 @@ public class CarMarks {
     @OneToMany(mappedBy = "carMarks",fetch = FetchType.EAGER)
     private List<CarModels> carModels;
 
+    public CarMarks(){}
+
+    public CarMarks(String markName) {
+        this.markName = markName;
+    }
+
     public List<CarModels> getCarModels() {
         return carModels;
     }

@@ -16,18 +16,27 @@ public class Repairs {
     @Column(name = "repairCauses")
     private String repairCauses;
 
-    @Column(name = "carId")
-    private int carId;
+    @ManyToOne
+    @JoinColumn(name = "carId")
+    private Cars carId;
 
     @Column(name = "price")
     private int price;
 
-    @ManyToOne
-    @JoinColumn(name = "repairId", insertable = false, updatable = false)
-    private Invoices invoices;
+//    @ManyToOne
+//    @JoinColumn(name = "repairId", insertable = false, updatable = false)
+//    private Invoices invoices;
 
     @OneToMany(mappedBy = "repairId",fetch = FetchType.EAGER)
     private List<RepairsState> RepairState;
+
+    public Repairs() {
+    }
+
+    public Repairs(String repairCauses, Cars carId) {
+        this.repairCauses = repairCauses;
+        this.carId = carId;
+    }
 
     public int getRepairId() {
         return repairId;
@@ -43,14 +52,6 @@ public class Repairs {
 
     public void setRepairCauses(String repairCauses) {
         this.repairCauses = repairCauses;
-    }
-
-    public int getCarId() {
-        return carId;
-    }
-
-    public void setCarId(int carId) {
-        this.carId = carId;
     }
 
     public int getPrice() {

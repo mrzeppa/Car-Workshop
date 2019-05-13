@@ -2,19 +2,20 @@ package com.javawebtutor.Models;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "cars")
 public class Cars {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    @Column(name = "carModelId")
-    private int carModelId;
+    @Column(name = "carId")
+    private int cars;
 
     @ManyToOne
-    @JoinColumn(name = "carId")
-    private Cars cars;
+    @JoinColumn(name = "carModelId")
+    private CarModels carModels;
 
     @Column(name = "course")
     private String course;
@@ -23,9 +24,9 @@ public class Cars {
     @JoinColumn(name = "userId")
     private Users users;
 
-    @ManyToOne
-    @JoinColumn(name = "carModelId", insertable = false, updatable = false)
-    private CarModels carModels;
+
+    @OneToMany(mappedBy = "carId",fetch = FetchType.EAGER)
+    private List<Repairs> repairs;
 
     public CarModels getCarModels() {
         return carModels;
@@ -43,21 +44,6 @@ public class Cars {
         this.users = users;
     }
 
-    public Cars getCars() {
-        return cars;
-    }
-
-    public void setCars(Cars cars) {
-        this.cars = cars;
-    }
-
-    public int getCarModelId() {
-        return carModelId;
-    }
-
-    public void setCarModelId(int carModelId) {
-        this.carModelId = carModelId;
-    }
 
     public String getCourse() {
         return course;

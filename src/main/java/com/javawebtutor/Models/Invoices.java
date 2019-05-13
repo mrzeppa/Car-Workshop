@@ -24,8 +24,8 @@ public class Invoices {
     @Column(name = "description")
     private String description;
 
-    @OneToMany(mappedBy = "invoices",fetch = FetchType.EAGER)
-    private List<Repairs> repairs;
+//    @OneToMany(mappedBy = "invoices",fetch = FetchType.EAGER)
+//    private List<Repairs> repairs;
 
     public int getInvoiceId() {
         return invoiceId;

@@ -7,12 +7,11 @@ import java.io.IOException;
 
 public class ClientMainSceneController extends Controller {
 
-    public void buttonAction(ActionEvent event) throws IOException {
-        editProfile();
+    public void editAction(ActionEvent event) throws IOException {
         this.changeScene(event, "/ClientEditProfile.fxml");
     }
 
-    public void editProfile(){
-
+    public void addCar(ActionEvent event) throws  IOException{
+        this.changeScene(event, "/ClientAddCarScene.fxml");
     }
 }
