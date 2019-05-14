@@ -33,7 +33,7 @@ public class ClientEditProfileController extends Controller implements Initializ
 //        session.getTransaction().begin();
 //        Users user;
 //        user = session.get(Users.class, LogInController.loggedUserId);
-//        System.out.println(user.getCars().get(0).getCarModels().getCarMarks().getMarkName());
+//        System.out.println(user.getCar().get(0).getCarModels().getCarMarks().getMarkName());
 //        session.close();
         loadData();
     }

@@ -14,7 +14,7 @@ public class RepairsState {
 
     @ManyToOne
     @JoinColumn(name = "repairId")
-    private Address repairId;
+    private Repairs repairId;
 
     @Column(name = "dateOfStart")
     private Date dateOfStart;
@@ -26,6 +26,22 @@ public class RepairsState {
     @JoinColumn(name = "stateId")
     private States states;
 
+
+    public Repairs getRepairId() {
+        return repairId;
+    }
+
+    public void setRepairId(Repairs repairId) {
+        this.repairId = repairId;
+    }
+
+    public States getStates() {
+        return states;
+    }
+
+    public void setStates(States states) {
+        this.states = states;
+    }
 
     public int getRepairStateId() {
         return repairStateId;

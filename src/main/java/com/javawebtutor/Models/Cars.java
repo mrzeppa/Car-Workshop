@@ -53,4 +53,19 @@ public class Cars {
         this.course = course;
     }
 
+    public int getCars() {
+        return cars;
+    }
+
+    public void setCars(int cars) {
+        this.cars = cars;
+    }
+
+    public List<Repairs> getRepairs() {
+        return repairs;
+    }
+
+    public void setRepairs(List<Repairs> repairs) {
+        this.repairs = repairs;
+    }
 }

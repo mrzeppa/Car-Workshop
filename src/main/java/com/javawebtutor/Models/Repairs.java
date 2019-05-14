@@ -38,6 +38,22 @@ public class Repairs {
         this.carId = carId;
     }
 
+    public Cars getCarId() {
+        return carId;
+    }
+
+    public void setCarId(Cars carId) {
+        this.carId = carId;
+    }
+
+    public List<RepairsState> getRepairState() {
+        return RepairState;
+    }
+
+    public void setRepairState(List<RepairsState> repairState) {
+        RepairState = repairState;
+    }
+
     public int getRepairId() {
         return repairId;
     }
@@ -62,4 +78,3 @@ public class Repairs {
         this.price = price;
     }
 }
-

@@ -14,4 +14,8 @@ public class ClientMainSceneController extends Controller {
     public void addCar(ActionEvent event) throws  IOException{
         this.changeScene(event, "/ClientAddCarScene.fxml");
     }
+
+    public void checkCarState(ActionEvent event) throws  IOException{
+        this.changeScene(event, "/ClientCheckCarRepairStateScene.fxml");
+    }
 }
