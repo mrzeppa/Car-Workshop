@@ -1,5 +1,7 @@
-package com.javawebtutor.Controllers;
+package com.javawebtutor.Controllers.ClientControllers;
 
+import com.javawebtutor.Controllers.Controller;
+import com.javawebtutor.Controllers.LogInController;
 import com.javawebtutor.Models.*;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.event.ActionEvent;
@@ -34,9 +36,9 @@ public class ClientAddCarController extends Controller {
         car.setUsers(user);
         car.setCourse(course.getText());
         CarMarks cm = new CarMarks(carMark.getText());
-        CarModels cmo = new CarModels(carMark.getText(), cm);
+        CarModels cmo = new CarModels(carModel.getText(), cm);
         Repairs repairs = new Repairs(repairCauses.getText(), car);
-        States st = new States();
+        States st;
         st = session.get(States.class, 1);
         RepairsState rs1 = new RepairsState(repairs, new Date(), new Date(), st);
         car.setCarModels(cmo);

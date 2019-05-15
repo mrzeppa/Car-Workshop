@@ -1,5 +1,7 @@
-package com.javawebtutor.Controllers;
+package com.javawebtutor.Controllers.ClientControllers;
 
+import com.javawebtutor.Controllers.Controller;
+import com.javawebtutor.Controllers.LogInController;
 import com.javawebtutor.Models.Users;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.event.ActionEvent;

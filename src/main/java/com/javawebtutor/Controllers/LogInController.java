@@ -24,7 +24,11 @@ public class LogInController extends Controller {
 
     public void buttonAction(ActionEvent event) throws IOException {
         logIn();
-        if(logIn())
+        if(logIn() && this.loggedUserRoleId == 1)
+            this.changeScene(event, "/ClientMainScene.fxml");
+        if(logIn() && this.loggedUserRoleId == 2)
+            this.changeScene(event, "/EmployeeMainScene.fxml");
+        if(logIn() && this.loggedUserRoleId == 3)
             this.changeScene(event, "/ClientMainScene.fxml");
     }
 
@@ -52,8 +56,10 @@ public class LogInController extends Controller {
                 .createQuery("from " + Users.class.getName() + " WHERE login = '" + login + "' AND password = '" + password + "'").list();
         if(list.size() > 0) {
             loggedUserId = list.get(0).getUserId();
+            loggedUserRoleId = list.get(0).getRoles().getRoleId();
         }
         return list.size();
     }
+
 
 }

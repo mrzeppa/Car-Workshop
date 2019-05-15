@@ -6,8 +6,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.hibernate.Session;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
 import java.io.IOException;
+import java.util.List;
 
 public class Controller {
 
@@ -17,5 +21,19 @@ public class Controller {
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
+    }
+
+    public static <T> List<T> loadAllData(Class<T> type, Session session) {
+        session.getTransaction().begin();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> criteria = builder.createQuery(type);
+        criteria.from(type);
+        List<T> data = session.createQuery(criteria).getResultList();
+        session.close();
+        return data;
+    }
+
+    public void logOut(){
+        LogInController.loggedUserId = 999999999;
     }
 }
