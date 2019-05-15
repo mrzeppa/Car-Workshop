@@ -13,7 +13,7 @@ public class Cars {
     @Column(name = "carId")
     private int cars;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "carModelId")
     private CarModels carModels;
 
@@ -25,7 +25,7 @@ public class Cars {
     private Users users;
 
 
-    @OneToMany(mappedBy = "carId",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "carId",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Repairs> repairs;
 
     public CarModels getCarModels() {

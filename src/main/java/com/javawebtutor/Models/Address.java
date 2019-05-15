@@ -26,7 +26,7 @@ public class Address {
     private int postCode;
     @Column(name = "city")
     private String city;
-    @OneToMany(mappedBy = "address",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "address",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Users> users;
 
 

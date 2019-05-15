@@ -12,7 +12,7 @@ public class RepairsState {
     @Column(name = "repairStateId")
     private int repairStateId;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "repairId")
     private Repairs repairId;
 

@@ -16,7 +16,7 @@ public class CarModels {
     @Column(name = "modelName")
     private String modelName;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "carMarkId")
     private CarMarks carMarks;
 

@@ -23,7 +23,7 @@ public class Users {
     @Column(name = "surname")
     private String surname;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "addressId")
     private Address address;
 

@@ -16,7 +16,7 @@ public class Repairs {
     @Column(name = "repairCauses")
     private String repairCauses;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "carId")
     private Cars carId;
 
@@ -27,7 +27,7 @@ public class Repairs {
 //    @JoinColumn(name = "repairId", insertable = false, updatable = false)
 //    private Invoices invoices;
 
-    @OneToMany(mappedBy = "repairId",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "repairId",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<RepairsState> RepairState;
 
     public Repairs() {
