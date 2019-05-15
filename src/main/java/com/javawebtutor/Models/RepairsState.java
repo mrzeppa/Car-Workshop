@@ -27,6 +27,16 @@ public class RepairsState {
     private States states;
 
 
+    public RepairsState() {
+    }
+
+    public RepairsState(Repairs repairId, Date dateOfStart, Date dateOfEnd, States states) {
+        this.repairId = repairId;
+        this.dateOfStart = dateOfStart;
+        this.dateOfEnd = dateOfEnd;
+        this.states = states;
+    }
+
     public Repairs getRepairId() {
         return repairId;
     }

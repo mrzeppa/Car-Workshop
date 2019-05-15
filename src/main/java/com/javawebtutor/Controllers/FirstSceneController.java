@@ -19,26 +19,7 @@ public class FirstSceneController extends Controller implements Initializable {
     SessionFactory factory = HibernateUtil.getSessionFactory();
 
     public void initialize(URL location, ResourceBundle resources) {
-        Session session = factory.getCurrentSession();
-        session.getTransaction().begin();
-        Users user;
-        user = session.get(Users.class, 1);
-        String t = "LP. \t|\tMarka\t|\tModel\t|\tPowod naprawy\t|\tStan naprawy\t|\tCena\t|";
-        for (Cars car : user.getCars()) {
-            int i = 0;
-            Repairs r1;
-            RepairsState rs1;
-            r1 = session.get(Repairs.class, car.getCars());
-            rs1 = session.get(RepairsState.class, r1.getRepairId());
-////            t = t + "\n" + i + "\t|\t" + user.getCar().get(i).getCarModels().getCarMarks().getMarkName() + "\t|\t" +
-////                    user.getCar().get(i).getCarModels().getModelName() + "\t|\t" + user.getCar().get(i).getRepairs().get(i).getRepairCauses() + "\t|\t" +
-////                    user.getCar().get(i).getRepairs().get(i).getRepairState().get(user.getCar().get(i).getRepairs().get(i).getRepairId()).getStates().getName() + "\t|\t" +
-////                    user.getCar().get(i).getRepairs().get(i).getPrice();
-//            System.out.println(car.getCourse());
-            System.out.println(car.getCarModels().getCarMarks().getMarkName() + " " + car.getCarModels().getModelName() + " " + r1.getRepairCauses() + " " + rs1.getStates().getName());
-            i++;
-        }
-    session.close();
+
     }
 
 

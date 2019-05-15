@@ -4,12 +4,15 @@ import com.javawebtutor.Models.*;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -50,5 +53,10 @@ public class ClientCheckCarRepairStateController extends Controller implements I
             tab5.setCellValueFactory(new PropertyValueFactory<>("price"));
             personData.add(a);
         }
+        session.close();
+    }
+
+    public void backButton(ActionEvent event) throws IOException {
+        this.changeScene(event, "/ClientMainScene.fxml");
     }
 }

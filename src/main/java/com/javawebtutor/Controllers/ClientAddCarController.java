@@ -14,6 +14,7 @@ import org.hibernate.SessionFactory;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -35,13 +36,21 @@ public class ClientAddCarController extends Controller {
         CarMarks cm = new CarMarks(carMark.getText());
         CarModels cmo = new CarModels(carMark.getText(), cm);
         Repairs repairs = new Repairs(repairCauses.getText(), car);
+        States st = new States();
+        st = session.get(States.class, 1);
+        RepairsState rs1 = new RepairsState(repairs, new Date(), new Date(), st);
         car.setCarModels(cmo);
         session.save(cm);
         session.save(cmo);
         session.save(car);
         session.save(repairs);
+        session.save(rs1);
         session.getTransaction().commit();
+        session.close();
 
+    }
 
+    public void backButton(ActionEvent event) throws IOException {
+        this.changeScene(event, "/ClientMainScene.fxml");
     }
 }
