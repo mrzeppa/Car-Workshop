@@ -8,7 +8,7 @@ import java.io.IOException;
 public class EmployeeMainSceneController extends Controller {
 
     public void editAction(ActionEvent event) throws IOException {
-        this.changeScene(event, "/ClientEditProfile.fxml");
+        this.changeScene(event, "/EmployeeEditProfileScene.fxml");
     }
 
     public void addCar(ActionEvent event) throws  IOException{
@@ -22,5 +22,9 @@ public class EmployeeMainSceneController extends Controller {
     public void logOutButton(ActionEvent event) throws IOException {
         this.logOut();
         this.changeScene(event, "/FirstScene.fxml");
+    }
+
+    public void checkUsers(ActionEvent event) throws IOException {
+        this.changeScene(event, "/EmployeeCheckUsersScene.fxml");
     }
 }

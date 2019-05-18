@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 
 import javax.persistence.criteria.CriteriaBuilder;

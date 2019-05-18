@@ -5,7 +5,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.EmployeeControllers.EmployeeMainSceneController">
     <children>
-        <Button layoutX="55.0" layoutY="95.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="80.0" text="Edytuj profil" />
+        <Button layoutX="55.0" layoutY="95.0" mnemonicParsing="false" onAction="#editAction" prefHeight="66.0" prefWidth="80.0" text="Edytuj profil" />
         <Button layoutX="407.0" layoutY="95.0" mnemonicParsing="false" onAction="#checkCarState" prefHeight="66.0" prefWidth="152.0" text="Sprawdz stan samochodu" />
+      <Button layoutX="224.0" layoutY="95.0" mnemonicParsing="false" onAction="#checkUsers" prefHeight="66.0" prefWidth="108.0" text="Button" />
     </children>
 </AnchorPane>

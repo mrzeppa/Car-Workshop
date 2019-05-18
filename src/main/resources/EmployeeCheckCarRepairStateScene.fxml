@@ -19,7 +19,8 @@
                         <TableColumn fx:id="tab3" prefWidth="75.0" text="Opis" />
                         <TableColumn fx:id="tab4" prefWidth="75.0" text="Realizacja" />
                         <TableColumn fx:id="tab5" prefWidth="75.0" text="Cena" />
-                        <TableColumn fx:id="tab6" prefWidth="75.0" text="Cena" />
+                        <TableColumn fx:id="tab6" prefWidth="75.0" text="edit" />
+                        <TableColumn fx:id="tab7" prefWidth="75.0" text="delete" />
                     </columns>
                 </TableView>
                 <!--<Button layoutX="340.0" layoutY="316.0" mnemonicParsing="false" onAction="#backButton" text="Button" />-->
