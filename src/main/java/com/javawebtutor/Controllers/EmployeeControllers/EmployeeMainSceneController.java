@@ -27,4 +27,8 @@ public class EmployeeMainSceneController extends Controller {
     public void checkUsers(ActionEvent event) throws IOException {
         this.changeScene(event, "/EmployeeCheckUsersScene.fxml");
     }
+
+    public void addCarType(ActionEvent event) throws IOException {
+        this.changeScene(event, "/EmployeeAddCarTypeScene.fxml");
+    }
 }
