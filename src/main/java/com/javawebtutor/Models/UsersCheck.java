@@ -5,12 +5,30 @@ import javafx.scene.control.Button;
 public class UsersCheck {
     public String name;
     public String surname;
-    public Button button;
+    public Button button1;
+    public Button button2;
 
-    public UsersCheck(String name, String surname, Button button) {
+    public UsersCheck(String name, String surname, Button button1, Button button2) {
         this.name = name;
         this.surname = surname;
-        this.button = button;
+        this.button1 = button1;
+        this.button2 = button2;
+    }
+
+    public Button getButton1() {
+        return button1;
+    }
+
+    public void setButton1(Button button1) {
+        this.button1 = button1;
+    }
+
+    public Button getButton2() {
+        return button2;
+    }
+
+    public void setButton2(Button button2) {
+        this.button2 = button2;
     }
 
     public String getName() {
@@ -29,11 +47,4 @@ public class UsersCheck {
         this.surname = surname;
     }
 
-    public Button getButton() {
-        return button;
-    }
-
-    public void setButton(Button button) {
-        this.button = button;
-    }
 }

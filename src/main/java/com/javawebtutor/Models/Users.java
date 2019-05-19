@@ -33,6 +33,9 @@ public class Users {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "passwordActivated")
+    private int passwordActivated;
+
     @OneToMany(mappedBy = "users",fetch = FetchType.EAGER)
     private List<Cars> cars;
 
@@ -42,6 +45,14 @@ public class Users {
 
     public List<Cars> getCars() {
         return cars;
+    }
+
+    public int getPasswordActivated() {
+        return passwordActivated;
+    }
+
+    public void setPasswordActivated(int passwordActivated) {
+        this.passwordActivated = passwordActivated;
     }
 
     public void setCars(List<Cars> cars) {
@@ -100,4 +111,18 @@ public class Users {
         this.address = address;
     }
 
+    @Override
+    public String toString() {
+        return "Users{" +
+                "userId=" + userId +
+                ", roles=" + roles +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", address=" + address +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", passwordActivated=" + passwordActivated +
+                ", cars=" + cars +
+                '}';
+    }
 }

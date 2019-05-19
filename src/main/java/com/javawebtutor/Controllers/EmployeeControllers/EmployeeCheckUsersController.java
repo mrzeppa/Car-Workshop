@@ -33,7 +33,9 @@ public class EmployeeCheckUsersController extends Controller implements Initiali
     @FXML
     private TableColumn<UsersCheck, String> surname;
     @FXML
-    private TableColumn<UsersCheck, String> button;
+    private TableColumn<UsersCheck, String> button1;
+    @FXML
+    private TableColumn<UsersCheck, String> button2;
     private ObservableList<UsersCheck> personData = FXCollections.observableArrayList();
 
 
@@ -47,6 +49,7 @@ public class EmployeeCheckUsersController extends Controller implements Initiali
         tv1.setItems(personData);
         for(Users u : users) {
             Button b1 = new Button("text");
+            Button b2 = new Button("car");
             b1.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
@@ -58,13 +61,31 @@ public class EmployeeCheckUsersController extends Controller implements Initiali
                     }
                 }
             });
-            UsersCheck uc = new UsersCheck(u.getName(), u.getSurname(), b1);
+
+            b2.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    try {
+                        userId = u.getUserId();
+                        changeScene(event, "/EmployeeAddUserCarScene.fxml");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            UsersCheck uc = new UsersCheck(u.getName(), u.getSurname(), b1, b2);
             name.setCellValueFactory(new PropertyValueFactory<>("name"));
             surname.setCellValueFactory(new PropertyValueFactory<>("surname"));
-            button.setCellValueFactory(new PropertyValueFactory<>("button"));
+            button1.setCellValueFactory(new PropertyValueFactory<>("button1"));
+            button2.setCellValueFactory(new PropertyValueFactory<>("button2"));
 
             personData.add(uc);
         }
     }
+
+    public void addUser(ActionEvent event) throws IOException {
+        changeScene(event, "/EmployeeAddUserScene.fxml");
+    }
+
 
 }
