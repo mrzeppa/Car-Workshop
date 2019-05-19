@@ -1,6 +1,7 @@
 package com.javawebtutor.Controllers;
 
 import com.javawebtutor.Models.Address;
+import com.javawebtutor.Models.Roles;
 import com.javawebtutor.Models.Users;
 import javafx.fxml.FXML;
 import com.javawebtutor.Utilities.HibernateUtil;
@@ -31,6 +32,7 @@ public class RegisterController extends Controller {
         if(checkLogin(login.getText()) == 0) {
 
             Address ad1 = new Address();
+            Roles r1 = session.get(Roles.class, 1);
             ad1.setCity(city.getText());
             ad1.setHomeNumber(Integer.parseInt(homeNumber.getText()));
             ad1.setPostCode(Integer.parseInt(postCode.getText()));
@@ -42,6 +44,8 @@ public class RegisterController extends Controller {
             u1.setSurname(surname.getText());
             u1.setLogin(login.getText());
             u1.setPassword(password.getText());
+            u1.setRoles(r1);
+            u1.setPasswordActivated(1);
             session.save(u1);
             session.getTransaction().commit();
         }

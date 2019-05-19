@@ -57,7 +57,7 @@ public class LogInController extends Controller {
         }
         else{
             System.out.println("zle dane logowania");
-            session.getTransaction().rollback();
+//            session.getTransaction().rollback();
         }
         session.close();
         return false;
@@ -77,7 +77,8 @@ public class LogInController extends Controller {
         cr.select(root).where(predicates);
         Query<Users> q = session.createQuery(cr);
         List<Users> results = q.getResultList();
-        System.out.println(results.get(0).toString());
+        session.close();
+//        System.out.println(results.get(0).toString());
 
         if(results.size() > 0) {
             loggedUserId = results.get(0).getUserId();
@@ -85,6 +86,8 @@ public class LogInController extends Controller {
             passwordActivated = results.get(0).getPasswordActivated();
 //            System.out.println(passwordActivated);
         }
+        else
+            return 0;
         return results.size();
     }
 

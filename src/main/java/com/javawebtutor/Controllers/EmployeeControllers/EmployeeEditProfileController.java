@@ -73,6 +73,6 @@ public class EmployeeEditProfileController extends Controller implements Initial
     }
 
     public void backButton(ActionEvent event) throws IOException {
-        this.changeScene(event, "/ClientMainScene.fxml");
+        this.changeScene(event, "/EmployeeMainScene.fxml");
     }
 }
