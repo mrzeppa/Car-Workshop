@@ -19,7 +19,7 @@ public class ActivatePasswordController extends Controller{
 
     public void activatePassword(ActionEvent event) throws IOException {
         System.out.println(password.getText());
-//        session.getTransaction().begin();
+        session.getTransaction().begin();
         Users u = session.get(Users.class, LogInController.loggedUserId);
         u.setPasswordActivated(1);
         u.setPassword(password.getText());
