@@ -6,7 +6,9 @@ import com.javawebtutor.Models.RepairsState;
 import com.javawebtutor.Models.Users;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
@@ -17,6 +19,8 @@ import java.util.ResourceBundle;
 
 public class FirstSceneController extends Controller implements Initializable {
     SessionFactory factory = HibernateUtil.getSessionFactory();
+    @FXML
+    private AnchorPane pane;
 
     public void initialize(URL location, ResourceBundle resources) {
 

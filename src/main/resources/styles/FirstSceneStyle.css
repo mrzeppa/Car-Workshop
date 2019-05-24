@@ -1,0 +1,13 @@
+.root{
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: black;
+    -fx-background-image: url(../images/FirstSceneImage.png);
+
+}
+
+.button{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-padding: 10;
+    -fx-border-radius: 10;
+}
