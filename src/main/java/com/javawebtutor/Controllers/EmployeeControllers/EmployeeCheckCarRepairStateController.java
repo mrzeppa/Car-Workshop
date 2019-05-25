@@ -2,6 +2,7 @@ package com.javawebtutor.Controllers.EmployeeControllers;
 
 import com.javawebtutor.Controllers.Controller;
 import com.javawebtutor.Models.*;
+import com.javawebtutor.Models.Classes.EmployeeCarCheck;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

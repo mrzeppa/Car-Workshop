@@ -3,6 +3,7 @@ package com.javawebtutor.Controllers.ClientControllers;
 import com.javawebtutor.Controllers.Controller;
 import com.javawebtutor.Controllers.LogInController;
 import com.javawebtutor.Models.*;
+import com.javawebtutor.Models.Classes.ClientCarCheck;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -11,14 +12,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class ClientCheckCarRepairStateController extends Controller implements Initializable{

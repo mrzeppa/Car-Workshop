@@ -24,4 +24,6 @@ public class ClientMainSceneController extends Controller {
         this.logOut();
         this.changeScene(event, "/FirstScene.fxml");
     }
+
+
 }

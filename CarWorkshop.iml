@@ -61,7 +61,6 @@
     <orderEntry type="library" name="Maven: com.nimbusds:nimbus-jose-jwt:3.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.51" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.2.4" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.as.plugins:jboss-as-maven-plugin:maven-plugin:7.9.Final" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.5" level="project" />
     <orderEntry type="library" name="Maven: org.tukaani:xz:1.2" level="project" />
@@ -125,5 +124,17 @@
     <orderEntry type="library" name="Maven: org.apache.maven:maven-settings-builder:3.0.5" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.13" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:itextpdf:5.5.13" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:kernel:7.1.6" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:io:7.1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.13" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:html2pdf:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:forms:7.1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:layout:7.1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:svg:7.1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:styled-xml-parser:7.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-log4j12:1.7.25" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: log4j:log4j:1.2.17" level="project" />
   </component>
 </module>

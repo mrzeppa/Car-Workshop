@@ -1,0 +1,84 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Times New Roman", Times, serif;
+}
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+}
+
+#div1{
+    float: left;
+    width: 35%;
+}
+
+#div1-1{
+    padding: 5px;
+    width: 100%;
+    height: 10%;
+    background-color: grey;
+}
+
+#div2{
+    width: 35%;
+    float: right;
+}
+
+#div3{
+    width: 35%;
+    float: left;
+
+}
+
+#div3-1{
+    padding: 5px;
+    width: 100%;
+    height: 10%;
+    background-color: grey;
+}
+
+#div4{
+    float: left;
+    width: 100%;
+}
+
+#tab1{
+    float: right;
+    margin-top: 10px;
+    width: 30%;
+}
+
+#div5{
+    margin: 10px;
+    float: left;
+    width: 45%;
+    font-size: 13px;
+}
+
+#div6{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+#div6-1{
+    margin-top: 10px;
+    padding: 45px;
+    float: left;
+    width: 35%;
+    text-align: center;
+}
+
+#div6-2{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 45px;
+    float: right;
+    width: 35%;
+    text-align: center;
+}

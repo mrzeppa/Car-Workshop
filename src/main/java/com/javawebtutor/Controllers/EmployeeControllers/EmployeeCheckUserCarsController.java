@@ -3,7 +3,7 @@ package com.javawebtutor.Controllers.EmployeeControllers;
 
 import com.javawebtutor.Controllers.Controller;
 import com.javawebtutor.Models.Cars;
-import com.javawebtutor.Models.UserCars;
+import com.javawebtutor.Models.Classes.UserCars;
 import com.javawebtutor.Models.Users;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.collections.FXCollections;
@@ -16,11 +16,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.query.Query;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;

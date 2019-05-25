@@ -2,7 +2,7 @@ package com.javawebtutor.Controllers.EmployeeControllers;
 
 import com.javawebtutor.Controllers.Controller;
 import com.javawebtutor.Models.Users;
-import com.javawebtutor.Models.UsersCheck;
+import com.javawebtutor.Models.Classes.UsersCheck;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

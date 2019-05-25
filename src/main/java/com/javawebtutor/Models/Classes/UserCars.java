@@ -1,4 +1,4 @@
-package com.javawebtutor.Models;
+package com.javawebtutor.Models.Classes;
 
 public class UserCars {
     public String mark;

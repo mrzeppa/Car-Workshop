@@ -1,4 +1,4 @@
-package com.javawebtutor.Models;
+package com.javawebtutor.Models.Classes;
 
 import javafx.scene.control.Button;
 
