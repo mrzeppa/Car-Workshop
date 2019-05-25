@@ -30,12 +30,24 @@ public class Repairs {
     @OneToMany(mappedBy = "repairId",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<RepairsState> RepairState;
 
+    @OneToMany(mappedBy = "repairId", cascade = CascadeType.ALL)
+    private List<RepairsOnInvoice> RON;
+
+
     public Repairs() {
     }
 
     public Repairs(String repairCauses, Cars carId) {
         this.repairCauses = repairCauses;
         this.carId = carId;
+    }
+
+    public List<RepairsOnInvoice> getRON() {
+        return RON;
+    }
+
+    public void setRON(List<RepairsOnInvoice> RON) {
+        this.RON = RON;
     }
 
     public Cars getCarId() {

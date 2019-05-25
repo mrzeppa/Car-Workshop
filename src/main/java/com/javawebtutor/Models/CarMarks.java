@@ -16,7 +16,7 @@ public class CarMarks {
     @Column(name = "markName")
     private String markName;
 
-    @OneToMany(mappedBy = "carMarks",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "carMarks",fetch = FetchType.EAGER)
     private List<CarModels> carModels;
 
     public CarMarks(){}

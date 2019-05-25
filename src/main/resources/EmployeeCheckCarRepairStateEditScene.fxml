@@ -17,8 +17,8 @@
                 <TextField fx:id="course" layoutX="300.0" layoutY="172.0" />
                 <!--<Button layoutX="349.0" layoutY="307.0" mnemonicParsing="false" onAction="#employee" text="Button" />-->
                 <ChoiceBox fx:id="repairState" layoutX="300.0" layoutY="219.0" prefWidth="150.0" />
-            <Button layoutX="393.0" layoutY="316.0" mnemonicParsing="false" onAction="#buttonAction" text="Button" />
-            <Button layoutX="468.0" layoutY="316.0" mnemonicParsing="false" onAction="#backButton" text="Button" />
+            <Button layoutX="393.0" layoutY="316.0" mnemonicParsing="false" onAction="#buttonAction" text="Edytuj" />
+            <Button layoutX="468.0" layoutY="316.0" mnemonicParsing="false" onAction="#backButton" text="Wroc" />
                 <!--<Button layoutX="446.0" layoutY="307.0" mnemonicParsing="false" onAction="#backButton" text="Button" />-->
             </children>
         </AnchorPane>

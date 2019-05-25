@@ -36,6 +36,8 @@ public class EmployeeCheckUsersController extends Controller implements Initiali
     private TableColumn<UsersCheck, String> button1;
     @FXML
     private TableColumn<UsersCheck, String> button2;
+    @FXML
+    private TableColumn<UsersCheck, String> button3;
     private ObservableList<UsersCheck> personData = FXCollections.observableArrayList();
 
 
@@ -50,6 +52,7 @@ public class EmployeeCheckUsersController extends Controller implements Initiali
         for(Users u : users) {
             Button b1 = new Button("text");
             Button b2 = new Button("car");
+            Button b3 = new Button("invoice");
             b1.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
@@ -73,11 +76,24 @@ public class EmployeeCheckUsersController extends Controller implements Initiali
                     }
                 }
             });
-            UsersCheck uc = new UsersCheck(u.getName(), u.getSurname(), b1, b2);
+            b3.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    try {
+                        userId = u.getUserId();
+                        changeScene(event, "/EmployeeAddInvoiceScene.fxml");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+
+            UsersCheck uc = new UsersCheck(u.getName(), u.getSurname(), b1, b2, b3);
             name.setCellValueFactory(new PropertyValueFactory<>("name"));
             surname.setCellValueFactory(new PropertyValueFactory<>("surname"));
             button1.setCellValueFactory(new PropertyValueFactory<>("button1"));
             button2.setCellValueFactory(new PropertyValueFactory<>("button2"));
+            button3.setCellValueFactory(new PropertyValueFactory<>("button3"));
 
             personData.add(uc);
         }

@@ -2,6 +2,9 @@ package com.javawebtutor.Controllers.EmployeeControllers;
 
 import com.javawebtutor.Controllers.Controller;
 import com.javawebtutor.Controllers.LogInController;
+import com.javawebtutor.Models.Invoices;
+import com.javawebtutor.Models.Repairs;
+import com.javawebtutor.Models.RepairsOnInvoice;
 import com.javawebtutor.Models.Users;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.event.ActionEvent;
@@ -52,6 +55,12 @@ public class EmployeeEditProfileController extends Controller implements Initial
         postCode.setText(Integer.toString(list.get(0).getAddress().getPostCode()));
         city.setText(list.get(0).getAddress().getCity());
         login.setText(list.get(0).getLogin());
+//
+//        Invoices ron1;
+//        ron1 = session.get(Invoices.class, 1);
+//        List<RepairsOnInvoice> a = ron1.getRON();
+//        System.out.println(a.get(1).getRepairId().getRepairCauses());
+
         session.close();
     }
 

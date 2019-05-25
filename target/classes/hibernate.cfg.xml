@@ -32,6 +32,8 @@
         <mapping class="com.javawebtutor.Models.Repairs" />
         <mapping class="com.javawebtutor.Models.Roles" />
         <mapping class="com.javawebtutor.Models.States" />
+        <mapping class="com.javawebtutor.Models.RepairsOnInvoice" />
+
 
     </session-factory>
 </hibernate-configuration>

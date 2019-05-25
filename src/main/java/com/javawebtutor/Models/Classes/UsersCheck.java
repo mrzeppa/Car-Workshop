@@ -7,12 +7,22 @@ public class UsersCheck {
     public String surname;
     public Button button1;
     public Button button2;
+    public Button button3;
 
-    public UsersCheck(String name, String surname, Button button1, Button button2) {
+    public UsersCheck(String name, String surname, Button button1, Button button2, Button button3) {
         this.name = name;
         this.surname = surname;
         this.button1 = button1;
         this.button2 = button2;
+        this.button3 = button3;
+    }
+
+    public Button getButton3() {
+        return button3;
+    }
+
+    public void setButton3(Button button3) {
+        this.button3 = button3;
     }
 
     public Button getButton1() {

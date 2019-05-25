@@ -12,9 +12,9 @@
             <children>
                 <TextField fx:id="carMark" layoutX="31.0" layoutY="84.0" />
                 <TextField fx:id="carModel" layoutX="300.0" layoutY="127.0" />
-            <Button layoutX="355.0" layoutY="175.0" mnemonicParsing="false" onAction="#addCar" text="Button" />
+            <Button layoutX="355.0" layoutY="175.0" mnemonicParsing="false" onAction="#addCar" text="Dodaj marke" />
             <ChoiceBox fx:id="carMarkList" layoutX="300.0" layoutY="84.0" prefWidth="150.0" />
-            <Button layoutX="80.0" layoutY="175.0" mnemonicParsing="false" onAction="#addCarMark" text="Button" />
+            <Button layoutX="80.0" layoutY="175.0" mnemonicParsing="false" onAction="#addCarMark" text="Dodaj model" />
             </children>
         </AnchorPane>
     </content>

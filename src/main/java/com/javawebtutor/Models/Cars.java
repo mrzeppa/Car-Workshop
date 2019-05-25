@@ -13,7 +13,7 @@ public class Cars {
     @Column(name = "carId")
     private int cars;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "carModelId")
     private CarModels carModels;
 

@@ -12,20 +12,23 @@ public class Invoices {
     @Column(name = "invoiceId")
     private int invoiceId;
 
-    @Column(name = "repairId")
-    private int repairId;
-
     @Column(name = "invoiceNumber")
     private String invoiceNumber;
 
     @Column(name = "dateOfMake")
     private Date dateOfMake;
 
-    @Column(name = "description")
-    private String description;
+    @OneToMany(mappedBy = "invoiceId",cascade = CascadeType.ALL)
+    private List<RepairsOnInvoice> RON;
 
-//    @OneToMany(mappedBy = "invoices",fetch = FetchType.EAGER)
-//    private List<Repairs> repairs;
+    public Invoices(String invoiceNumber, Date dateOfMake, List<RepairsOnInvoice> RON) {
+        this.invoiceNumber = invoiceNumber;
+        this.dateOfMake = dateOfMake;
+        this.RON = RON;
+    }
+
+    public Invoices() {
+    }
 
     public int getInvoiceId() {
         return invoiceId;
@@ -33,14 +36,6 @@ public class Invoices {
 
     public void setInvoiceId(int invoiceId) {
         this.invoiceId = invoiceId;
-    }
-
-    public int getRepairId() {
-        return repairId;
-    }
-
-    public void setRepairId(int repairId) {
-        this.repairId = repairId;
     }
 
     public String getInvoiceNumber() {
@@ -59,11 +54,11 @@ public class Invoices {
         this.dateOfMake = dateOfMake;
     }
 
-    public String getDescription() {
-        return description;
+    public List<RepairsOnInvoice> getRON() {
+        return RON;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setRON(List<RepairsOnInvoice> RON) {
+        this.RON = RON;
     }
 }
