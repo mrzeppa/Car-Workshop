@@ -41,7 +41,7 @@ public class LogInController extends Controller {
             if (logIn() && this.loggedUserRoleId == 2)
                 this.changeScene(event, "/EmployeeMainScene.fxml");
             if (logIn() && this.loggedUserRoleId == 3)
-                this.changeScene(event, "/ClientMainScene.fxml");
+                this.changeScene(event, "/AdminMainScene.fxml");
         }
     }
 
