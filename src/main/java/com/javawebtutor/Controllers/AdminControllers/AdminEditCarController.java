@@ -1,6 +1,7 @@
-package com.javawebtutor.Controllers.EmployeeControllers;
+package com.javawebtutor.Controllers.AdminControllers;
 
 import com.javawebtutor.Controllers.Controller;
+import com.javawebtutor.Controllers.EmployeeControllers.EmployeeCheckCarRepairStateController;
 import com.javawebtutor.Models.Cars;
 import com.javawebtutor.Models.Repairs;
 import com.javawebtutor.Models.RepairsState;
@@ -21,10 +22,11 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class EmployeeCheckCarRepairStateEditController extends Controller implements Initializable {
+public class AdminEditCarController extends Controller implements Initializable {
     SessionFactory factory = HibernateUtil.getSessionFactory();
     Session session = factory.getCurrentSession();
-    @FXML private ChoiceBox repairState;
+    @FXML
+    private ChoiceBox repairState;
     @FXML private TextField carModel;
     @FXML private TextField carMark;
     @FXML private TextField course;
@@ -43,7 +45,7 @@ public class EmployeeCheckCarRepairStateEditController extends Controller implem
         session = factory.getCurrentSession();
         session.getTransaction().begin();
         System.out.println(session.isConnected());
-        Cars car = session.get(Cars.class, EmployeeCheckCarRepairStateController.carId);
+        Cars car = session.get(Cars.class, AdminUserCarsEditController.carId);
         Repairs r1 = session.get(Repairs.class, car.getCars());
         RepairsState rs1 = session.get(RepairsState.class, r1.getRepairId());
 
@@ -69,7 +71,7 @@ public class EmployeeCheckCarRepairStateEditController extends Controller implem
     public void edit(){
         session = factory.getCurrentSession();
         session.getTransaction().begin();
-        Cars car = session.get(Cars.class, EmployeeCheckCarRepairStateController.carId);
+        Cars car = session.get(Cars.class, AdminUserCarsEditController.carId);
         Repairs r1 = session.get(Repairs.class, car.getCars());
         RepairsState rs1 = session.get(RepairsState.class, r1.getRepairId());
         States s1 = session.get(States.class, 1);
@@ -91,6 +93,6 @@ public class EmployeeCheckCarRepairStateEditController extends Controller implem
     }
 
     public void backButton(ActionEvent event) throws IOException {
-        this.changeScene(event, "/EmployeeCheckCarRepairStateScene.fxml");
+        this.changeScene(event, "/AdminUserCarsEditScene.fxml");
     }
 }

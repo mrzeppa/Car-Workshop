@@ -24,6 +24,7 @@
                     </columns>
                 </TableView>
                 <!--<Button layoutX="340.0" layoutY="316.0" mnemonicParsing="false" onAction="#backButton" text="Button" />-->
-            </children></AnchorPane>
+            </children>
+        </AnchorPane>
     </content>
 </ScrollPane>

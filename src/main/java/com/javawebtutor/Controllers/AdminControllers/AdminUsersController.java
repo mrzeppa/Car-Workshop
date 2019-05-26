@@ -39,6 +39,8 @@ public class AdminUsersController extends Controller implements Initializable {
     private TableColumn<UsersCheck, String> button2;
     @FXML
     private TableColumn<UsersCheck, String> button3;
+    @FXML
+    private TableColumn<UsersCheck, String> button4;
     private ObservableList<UsersCheck> personData = FXCollections.observableArrayList();
 
 
@@ -54,6 +56,7 @@ public class AdminUsersController extends Controller implements Initializable {
             Button b1 = new Button("text");
             Button b2 = new Button("car");
             Button b3 = new Button("invoice");
+            Button b4 = new Button("addCar");
             b1.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
@@ -82,23 +85,35 @@ public class AdminUsersController extends Controller implements Initializable {
                 public void handle(ActionEvent event) {
                     try {
                         userId = u.getUserId();
-                        changeScene(event, "/EmployeeAddInvoiceScene.fxml");
+                        changeScene(event, "/AdminUserCarsEditScene.fxml");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
             });
 
-            UsersCheck uc = new UsersCheck(u.getName(), u.getSurname(), b1, b2, b3);
+            b4.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    try {
+                        userId = u.getUserId();
+                        changeScene(event, "/AdminUserAddCarScene.fxml");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+
+            UsersCheck uc = new UsersCheck(u.getName(), u.getSurname(), b1, b2, b3, b4);
             name.setCellValueFactory(new PropertyValueFactory<>("name"));
             surname.setCellValueFactory(new PropertyValueFactory<>("surname"));
             button1.setCellValueFactory(new PropertyValueFactory<>("button1"));
             button2.setCellValueFactory(new PropertyValueFactory<>("button2"));
             button3.setCellValueFactory(new PropertyValueFactory<>("button3"));
+            button4.setCellValueFactory(new PropertyValueFactory<>("button4"));
 
             personData.add(uc);
-            if(u.getCars().size() > 0)
-                tv1.setStyle("-fx-selection-bar: red;");
+
         }
     }
 
@@ -109,6 +124,11 @@ public class AdminUsersController extends Controller implements Initializable {
     public void delete(Users user) {
         Session session = factory.getCurrentSession();
         session.getTransaction().begin();
+        List<Cars> carList = user.getCars();
+        for(Cars cl : carList){
+            cl.setUsers(null);
+            session.update(cl);
+        }
         session.delete(user);
         session.getTransaction().commit();
         session.close();

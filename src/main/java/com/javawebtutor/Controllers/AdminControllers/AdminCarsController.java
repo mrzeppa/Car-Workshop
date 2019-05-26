@@ -1,9 +1,10 @@
-package com.javawebtutor.Controllers.EmployeeControllers;
-
+package com.javawebtutor.Controllers.AdminControllers;
 
 import com.javawebtutor.Controllers.Controller;
+import com.javawebtutor.Controllers.EmployeeControllers.EmployeeCheckUsersController;
 import com.javawebtutor.Models.Cars;
 import com.javawebtutor.Models.Classes.UserCars;
+import com.javawebtutor.Models.Roles;
 import com.javawebtutor.Models.Users;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.collections.FXCollections;
@@ -22,10 +23,9 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class EmployeeCheckUserCarsController extends Controller implements Initializable {
-//
+public class AdminCarsController extends Controller implements Initializable {
+
     SessionFactory factory = HibernateUtil.getSessionFactory();
-    Session session = factory.getCurrentSession();
     @FXML
     private TableView<UserCars> tv1;
     @FXML
@@ -36,18 +36,12 @@ public class EmployeeCheckUserCarsController extends Controller implements Initi
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        Session session = factory.getCurrentSession();
+        List<Cars> cars = loadAllData(Cars.class, session);
+        session = factory.getCurrentSession();
         session.getTransaction().begin();
-        Users u = session.get(Users.class, EmployeeCheckUsersController.userId);
-        List<Cars> cars = u.getCars();
         tv1.setItems(personData);
         for(Cars c : cars){
-//            CriteriaBuilder cb = session.getCriteriaBuilder();
-//            CriteriaQuery<Users> cr = cb.createQuery(Users.class);
-//            Root<Users> root = cr.from(Users.class);
-//            cr.select(root).where(cb.like(root.get("name"), "Marcin"));
-//            Query<Users> q = session.createQuery(cr);
-//            List<Users> results = q.getResultList();
-//            System.out.println(results.get(0).getLogin());
             UserCars uc = new UserCars(c.getCarModels().getCarMarks().getMarkName(), c.getCarModels().getModelName());
             mark.setCellValueFactory(new PropertyValueFactory<>("mark"));
             model.setCellValueFactory(new PropertyValueFactory<>("model"));
@@ -57,6 +51,6 @@ public class EmployeeCheckUserCarsController extends Controller implements Initi
     }
 
     public void backButton(ActionEvent event) throws IOException {
-        changeScene(event, "/EmployeeCheckUsersScene.fxml");
+        changeScene(event, "/AdminMainScene.fxml");
     }
 }
