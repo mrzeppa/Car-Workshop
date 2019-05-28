@@ -1,11 +1,12 @@
 package com.javawebtutor.Utilities;
-//package org.o7planning.tutorial.hibernate;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.service.ServiceRegistry;
+
+import java.sql.DriverManager;
 
 public class HibernateUtil {
 
@@ -37,5 +38,4 @@ public class HibernateUtil {
         // Close caches and connection pools
         getSessionFactory().close();
     }
-
 }

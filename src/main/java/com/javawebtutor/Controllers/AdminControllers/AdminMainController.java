@@ -13,4 +13,8 @@ public class AdminMainController extends Controller {
     public void cars(ActionEvent event) throws IOException {
         this.changeScene(event, "/AdminCarsScene.fxml");
     }
+
+    public void carMarks(ActionEvent event) throws IOException {
+        this.changeScene(event, "/AdminCarMarksScene.fxml");
+    }
 }

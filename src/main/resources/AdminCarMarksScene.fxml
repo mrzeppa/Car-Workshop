@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminCarMarksController" prefHeight="400.0" prefWidth="600.0">
+    <TableView fx:id="tv1" layoutX="88.0" layoutY="66.0" prefHeight="200.0" prefWidth="374.0">
+        <columns>
+            <TableColumn fx:id="mark" prefWidth="75.0" text="Marka" />
+            <TableColumn fx:id="button1" prefWidth="75.0" text="1" />
+            <TableColumn fx:id="button2" prefWidth="75.0" text="2" />
+            <TableColumn fx:id="button3" prefWidth="75.0" text="2" />
+        </columns>
+    </TableView>
+    <Button layoutX="369.0" layoutY="343.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+</AnchorPane>

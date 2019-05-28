@@ -11,16 +11,16 @@ public class CarModels {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "carModelId")
-    private Long carModelId;
+    private int carModelId;
 
     @Column(name = "modelName")
     private String modelName;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "carMarkId")
     private CarMarks carMarks;
 
-    @OneToMany(mappedBy = "carModels",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "carModels",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Cars> Cars;
 
     public List<com.javawebtutor.Models.Cars> getCars() {
@@ -39,11 +39,11 @@ public class CarModels {
         Cars = cars;
     }
 
-    public Long getCarModelId() {
+    public int getCarModelId() {
         return carModelId;
     }
 
-    public void setCarModelId(Long carModelId) {
+    public void setCarModelId(int carModelId) {
         this.carModelId = carModelId;
     }
 
