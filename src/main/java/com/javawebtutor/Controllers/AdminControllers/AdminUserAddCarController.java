@@ -71,7 +71,7 @@ public class AdminUserAddCarController extends Controller implements Initializab
         Session session = factory.getCurrentSession();
         session.getTransaction().begin();
         Users user;
-        user = session.get(Users.class, EmployeeCheckUsersController.userId);
+        user = session.get(Users.class, AdminUsersController.userId);
         Cars car = new Cars();
         car.setUsers(user);
         car.setCourse(course.getText());

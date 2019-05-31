@@ -6,10 +6,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminUsersController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminUsersController">
     <children>
-        <Label fx:id="l1" layoutY="39.0" prefHeight="331.0" prefWidth="550.0" />
-        <TableView fx:id="tv1" layoutX="88.0" layoutY="66.0" prefHeight="200.0" prefWidth="374.0">
+        <Label fx:id="l1" layoutY="39.0" prefHeight="331.0" prefWidth="783.0" />
+        <TableView fx:id="tv1" layoutX="88.0" layoutY="66.0" prefHeight="200.0" prefWidth="667.0">
             <columns>
                 <TableColumn fx:id="name" prefWidth="75.0" text="Imie" />
                 <TableColumn fx:id="surname" prefWidth="75.0" text="Nazwisko" />
@@ -17,6 +17,7 @@
                 <TableColumn fx:id="button2" prefWidth="75.0" text="aaa2" />
                 <TableColumn fx:id="button3" prefWidth="75.0" text="aaa3" />
                 <TableColumn fx:id="button4" prefWidth="75.0" text="aaa3" />
+                <TableColumn fx:id="button5" prefWidth="75.0" text="aaa3" />
             </columns>
         </TableView>
         <Button layoutX="340.0" layoutY="316.0" mnemonicParsing="false" onAction="#backButton" text="Button" />

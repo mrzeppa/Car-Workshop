@@ -3,16 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminMainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserAddCarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserAddCarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUsersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/CarMarks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/CarMarks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/CarModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/CarModels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Utilities/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Utilities/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AdminMainScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AdminMainScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdminMainScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdminMainScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminMainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminMainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Models/CarMarks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Models/CarMarks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Models/CarModels.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Models/CarModels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/UsersCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/UsersCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AdminUsersScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AdminUsersScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AdminUsersScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdminUsersScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUserAddCarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUserAddCarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Controllers/AdminControllers/AdminUsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javawebtutor/Models/Classes/UsersCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javawebtutor/Models/Classes/UsersCheck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testa.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testa.pdf" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -76,10 +80,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminEditCarModelController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserCarsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="229">
+              <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,10 +92,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminCarMarksController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserAddCarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="630">
+              <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,10 +104,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/AdminUserCarsRepairsEditScene.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="306">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserCarsEditController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-451">
+              <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,31 +126,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminCreateInvoiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" selection-start-line="21" selection-end-line="112" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="141" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="141" />
+            <state relative-caret-position="1310">
+              <caret line="210" column="8" selection-start-line="210" selection-start-column="8" selection-end-line="210" selection-end-column="8" />
               <folding>
-                <element signature="e#467#472#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Utilities/HibernateUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/AdminCreateInvoiceScene.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="340">
+              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeAddInvoiceScene.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="20" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeAddInvoiceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2319">
+              <caret line="198" column="62" selection-end-line="208" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,33 +170,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUsersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Programy/JDK8/javafx-src.zip!/javafx/application/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-814">
-              <caret line="304" column="25" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminEditCarMarkController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="525">
+              <caret line="90" column="68" selection-start-line="90" selection-start-column="68" selection-end-line="90" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,13 +182,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminCarMarksModelInfoController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserCarsRepairsEditController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="72" column="66" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -222,6 +221,7 @@
       <find>delete</find>
       <find>final</find>
       <find>PDF</find>
+      <find>AdminUserCarsEditScene</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -235,15 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeCheckUsersController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Invoices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/RepairsState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeMainSceneController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/EmployeeMainScene.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/EmployeeAddInvoiceScene.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Repairs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/RepairsOnInvoice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminMainScene.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminMainSceneController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/LogInController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeAddInvoiceController.java" />
@@ -263,11 +254,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/AdminCarsScene.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeCheckUserCarsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminCarsController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/AdminUsersScene.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/UsersCheck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUsersController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/AdminUserAddCarScene.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserAddCarController.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/AdminMainScene.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminMainController.java" />
@@ -285,7 +272,20 @@
         <option value="$PROJECT_DIR$/src/main/resources/AdminEditCarMarkScene.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Utilities/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/AdminUsersScene.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/AdminUserRepairs.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/AdminUserRepairsScene.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/UsersCheck.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/AdminUserCarsScene.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/EmployeeCheckCarRepairStateEditScene.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/AdminUserCarsRepairsEditScene.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserCarsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserAddCarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserCarsRepairsEditController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/AdminCreateInvoiceScene.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminCreateInvoiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUsersController.java" />
       </list>
     </option>
   </component>
@@ -297,7 +297,7 @@
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="969" />
@@ -364,6 +364,45 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javawebtutor" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Car-Workshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Car-Workshop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javawebtutor" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="EmployeeControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Car-Workshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Car-Workshop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javawebtutor" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Car-Workshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Car-Workshop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javawebtutor" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="Classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Car-Workshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Car-Workshop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javawebtutor" type="462c0819:PsiDirectoryNode" />
               <item name="Utilities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -395,9 +434,9 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559074184691" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559156435186" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Car-Workshop - Copy/Car-Workshop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Appjava" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33365476" />
@@ -516,10 +555,9 @@
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.20735608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21162046" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.32995737" />
       <window_info id="Designer" order="3" />
@@ -528,7 +566,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43445286" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24702059" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -598,142 +636,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeCheckCarRepairStateEditController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/AdminUserCarsEditScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ClientCheckCarRepairStateScene.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeCheckCarRepairStateEditScene.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeCheckCarRepairStateScene.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeCheckUserCarsScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="14" selection-end-column="104" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/UserCars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/ClientCarCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/AdminUsersScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/UsersCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminAddUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="39" column="58" selection-start-line="38" selection-start-column="8" selection-end-line="39" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeCheckUserCarsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="60" column="5" selection-start-line="26" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserCarsEditController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/EmployeeCarCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeAddUserCarScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/AdminUserAddCarScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeAddUserCarController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -750,48 +652,28 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/AdminCarsScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="15" selection-end-column="105" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/AdminMainScene.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="209" selection-start-line="5" selection-start-column="209" selection-end-line="5" selection-end-column="209" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUsersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="104" column="15" lean-forward="true" selection-start-line="94" selection-start-column="12" selection-end-line="104" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeCheckCarRepairStateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/AdminEditCarScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="93" selection-start-line="17" selection-start-column="93" selection-end-line="17" selection-end-column="93" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/CarMarks.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -860,73 +742,45 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/AdminEditCarMarkScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeAddInvoiceScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeAddInvoiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="198" column="62" lean-forward="true" selection-start-line="198" selection-start-column="62" selection-end-line="198" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ClientMainScene.fxml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/AdminCarMarksScene.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/AdminCarMarksModelInfoScene.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/AdminEditCarModelScene.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-end-line="14" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/ActivatePasswordController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserAddCarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -963,24 +817,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminEditCarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="47" column="70" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1271#1272#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminEditCarModelController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminCarMarksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="141" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="141" />
+          <folding>
+            <element signature="e#467#472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Utilities/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programy/JDK8/javafx-src.zip!/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4573">
+          <caret line="304" column="25" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminEditCarMarkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -999,76 +896,213 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" selection-start-line="21" selection-end-line="112" selection-end-column="19" />
+        <state relative-caret-position="459">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Programy/JDK8/javafx-src.zip!/javafx/application/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/AdminUsersScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-814">
-          <caret line="304" column="25" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminEditCarMarkController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/UsersCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="548">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Utilities/HibernateUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Models/Classes/EmployeeCarCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeCheckUserCarsScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeCheckUserCarsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="141" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="141" />
-          <folding>
-            <element signature="e#467#472#0" expanded="true" />
-          </folding>
+          <caret line="26" selection-start-line="26" selection-end-line="60" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminCarMarksController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeCheckCarRepairStateController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="85">
+          <caret line="25" selection-start-line="25" selection-end-line="120" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeCheckCarRepairStateScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/AdminUserCarsScene.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="255">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/AdminUserCarsEditScene.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeCheckCarRepairStateEditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="94" column="5" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminEditCarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" selection-end-line="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1341#1342#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeCheckCarRepairStateEditScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/AdminUserCarsRepairsEditScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserCarsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserAddCarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserCarsRepairsEditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="72" column="66" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUserCarsEditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-451">
+          <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/EmployeeControllers/EmployeeAddInvoiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2319">
+          <caret line="198" column="62" selection-end-line="208" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/EmployeeAddInvoiceScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/AdminCreateInvoiceScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminCreateInvoiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1310">
+          <caret line="210" column="8" selection-start-line="210" selection-start-column="8" selection-end-line="210" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javawebtutor/Controllers/AdminControllers/AdminUsersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="90" column="68" selection-start-line="90" selection-start-column="68" selection-end-line="90" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

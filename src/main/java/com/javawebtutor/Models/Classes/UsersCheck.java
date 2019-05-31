@@ -9,6 +9,7 @@ public class UsersCheck {
     public Button button2;
     public Button button3;
     public Button button4;
+    public Button button5;
 
     public UsersCheck(String name, String surname, Button button1, Button button2, Button button3) {
         this.name = name;
@@ -25,6 +26,24 @@ public class UsersCheck {
         this.button2 = button2;
         this.button3 = button3;
         this.button4 = button4;
+    }
+
+    public UsersCheck(String name, String surname, Button button1, Button button2, Button button3, Button button4, Button button5) {
+        this.name = name;
+        this.surname = surname;
+        this.button1 = button1;
+        this.button2 = button2;
+        this.button3 = button3;
+        this.button4 = button4;
+        this.button5 = button5;
+    }
+
+    public Button getButton5() {
+        return button5;
+    }
+
+    public void setButton5(Button button5) {
+        this.button5 = button5;
     }
 
     public Button getButton4() {

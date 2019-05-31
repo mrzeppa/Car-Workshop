@@ -41,6 +41,8 @@ public class AdminUsersController extends Controller implements Initializable {
     private TableColumn<UsersCheck, String> button3;
     @FXML
     private TableColumn<UsersCheck, String> button4;
+    @FXML
+    private TableColumn<UsersCheck, String> button5;
     private ObservableList<UsersCheck> personData = FXCollections.observableArrayList();
 
 
@@ -53,10 +55,11 @@ public class AdminUsersController extends Controller implements Initializable {
         List<Users> users = loadAllData(Users.class, session);
         tv1.setItems(personData);
         for(Users u : users) {
-            Button b1 = new Button("text");
-            Button b2 = new Button("car");
-            Button b3 = new Button("invoice");
-            Button b4 = new Button("addCar");
+            Button b1 = new Button("Usuń");
+            Button b2 = new Button("Edytuj");
+            Button b3 = new Button("Faktury");
+            Button b4 = new Button("Dodaj samochód");
+            Button b5 = new Button("Wyświetl samochody");
             b1.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
@@ -85,7 +88,7 @@ public class AdminUsersController extends Controller implements Initializable {
                 public void handle(ActionEvent event) {
                     try {
                         userId = u.getUserId();
-                        changeScene(event, "/AdminUserCarsEditScene.fxml");
+                        changeScene(event, "/AdminCreateInvoiceScene.fxml");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -104,13 +107,26 @@ public class AdminUsersController extends Controller implements Initializable {
                 }
             });
 
-            UsersCheck uc = new UsersCheck(u.getName(), u.getSurname(), b1, b2, b3, b4);
+            b5.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    try {
+                        userId = u.getUserId();
+                        changeScene(event, "/AdminUserCarsScene.fxml");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+
+            UsersCheck uc = new UsersCheck(u.getName(), u.getSurname(), b1, b2, b3, b4, b5);
             name.setCellValueFactory(new PropertyValueFactory<>("name"));
             surname.setCellValueFactory(new PropertyValueFactory<>("surname"));
             button1.setCellValueFactory(new PropertyValueFactory<>("button1"));
             button2.setCellValueFactory(new PropertyValueFactory<>("button2"));
             button3.setCellValueFactory(new PropertyValueFactory<>("button3"));
             button4.setCellValueFactory(new PropertyValueFactory<>("button4"));
+            button5.setCellValueFactory(new PropertyValueFactory<>("button5"));
 
             personData.add(uc);
 
