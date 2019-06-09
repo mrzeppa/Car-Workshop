@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -26,6 +27,7 @@ import java.util.ResourceBundle;
 public class AdminCarMarksModelInfoController extends Controller implements Initializable {
     public static int carModelId;
     SessionFactory factory = HibernateUtil.getSessionFactory();
+    @FXML private TextField carModelTextField;
     @FXML
     private TableView<CarModelsView> tv1;
     @FXML
@@ -46,8 +48,8 @@ public class AdminCarMarksModelInfoController extends Controller implements Init
         List<CarModels> cmod = cm.getCarModels();
         tv1.setItems(personData);
         for(CarModels c : cmod){
-            Button b1 = new Button("hehe");
-            Button b2 = new Button("hehe");
+            Button b1 = new Button("Edytuj");
+            Button b2 = new Button("Usun");
             b1.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
@@ -76,7 +78,6 @@ public class AdminCarMarksModelInfoController extends Controller implements Init
             mark.setCellValueFactory(new PropertyValueFactory<>("carModelName"));
             button1.setCellValueFactory(new PropertyValueFactory<>("button1"));
             button2.setCellValueFactory(new PropertyValueFactory<>("button2"));
-            button3.setCellValueFactory(new PropertyValueFactory<>("button3"));
 
             personData.add(cmv);
         }
@@ -93,6 +94,18 @@ public class AdminCarMarksModelInfoController extends Controller implements Init
         session.delete(cm);
         session.getTransaction().commit();
         session.close();
+    }
+
+    public void addCarModel(ActionEvent event) throws IOException {
+        Session session = factory.getCurrentSession();
+        session.getTransaction().begin();
+        CarMarks cm = session.get(CarMarks.class, AdminCarMarksController.carMarkId);
+        System.out.println(cm.getMarkName());
+        CarModels cmo = new CarModels(carModelTextField.getText(), cm);
+        session.save(cmo);
+        session.getTransaction().commit();
+        session.close();
+        changeScene(event, "/AdminCarMarksModelInfoScene.fxml");
     }
 //    AdminCarMarksScene
 }

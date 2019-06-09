@@ -22,6 +22,7 @@ public class Controller {
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
+        System.out.println(fxml);
     }
 
     public static <T> List<T> loadAllData(Class<T> type, Session session) {
@@ -34,7 +35,8 @@ public class Controller {
         return data;
     }
 
-    public void logOut(){
+    public void logOut(ActionEvent event) throws IOException {
         LogInController.loggedUserId = 999999999;
+        changeScene(event, "/FirstScene.fxml");
     }
 }

@@ -27,8 +27,7 @@ public class ActivatePasswordController extends Controller{
         session.getTransaction().commit();
 
         session.close();
-        logOut();
-        changeScene(event, "/LogInScene.fxml");
+        logOut(event);
     }
 
     public void backButton(ActionEvent event) throws IOException {

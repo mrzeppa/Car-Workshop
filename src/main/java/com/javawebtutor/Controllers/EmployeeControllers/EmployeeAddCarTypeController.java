@@ -74,4 +74,8 @@ public class EmployeeAddCarTypeController extends Controller implements Initiali
         session.getTransaction().commit();
         session.close();
     }
+
+    public void backButton(ActionEvent event) throws IOException {
+        changeScene(event, "/EmployeeMainScene.fxml");
+    }
 }

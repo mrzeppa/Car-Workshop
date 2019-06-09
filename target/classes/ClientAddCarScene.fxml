@@ -2,17 +2,24 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.ClientControllers.ClientAddCarController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="styles/ClientAddCarStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.ClientControllers.ClientAddCarController">
    <children>
-      <TextArea fx:id="repairCauses" layoutX="49.0" layoutY="84.0" prefHeight="200.0" prefWidth="200.0" />
-      <TextField fx:id="course" layoutX="300.0" layoutY="172.0" />
-      <Button layoutX="349.0" layoutY="307.0" mnemonicParsing="false" onAction="#clientAddCar" text="Button" />
-      <Button layoutX="446.0" layoutY="307.0" mnemonicParsing="false" onAction="#backButton" text="Button" />
-      <ChoiceBox fx:id="carMark" layoutX="300.0" layoutY="84.0" prefWidth="150.0" />
-      <ChoiceBox fx:id="carModel" layoutX="300.0" layoutY="130.0" prefWidth="150.0" />
+      <TextArea fx:id="repairCauses" layoutX="200.0" layoutY="209.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="course" layoutX="452.0" layoutY="384.0" />
+      <Button layoutX="580.0" layoutY="527.0" mnemonicParsing="false" onAction="#clientAddCar" text="Dodaj" />
+      <Button layoutX="724.0" layoutY="527.0" mnemonicParsing="false" onAction="#backButton" text="Wroc" />
+      <ChoiceBox fx:id="carMark" layoutX="451.0" layoutY="209.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="carModel" layoutX="452.0" layoutY="297.0" prefWidth="150.0" />
+      <Label layoutX="200.0" layoutY="192.0" text="Powody naprawy" />
+      <Label layoutX="451.0" layoutY="192.0" text="Marka samochodu" />
+      <Label layoutX="451.0" layoutY="280.0" text="Model samochodu" />
+      <Label layoutX="452.0" layoutY="367.0" text="Przebieg" />
+      <Button layoutX="697.0" layoutY="8.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="84.0" text="Wyloguj" />
+
    </children>
 </AnchorPane>

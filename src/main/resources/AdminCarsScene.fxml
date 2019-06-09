@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminCarsController" prefHeight="400.0" prefWidth="600.0">
-    <TableView fx:id="tv1" layoutX="88.0" layoutY="66.0" prefHeight="200.0" prefWidth="374.0">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="styles/AdminCarsStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminCarsController">
+    <TableView fx:id="tv1" layoutX="82.0" layoutY="200.0" prefHeight="200.0" prefWidth="374.0">
         <columns>
             <TableColumn fx:id="mark" prefWidth="75.0" text="Marka" />
             <TableColumn fx:id="model" prefWidth="75.0" text="Model" />
         </columns>
     </TableView>
-    <Button layoutX="369.0" layoutY="343.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+    <Button layoutX="721.0" layoutY="524.0" mnemonicParsing="false" onAction="#backButton" text="Wroc" />
+    <Button layoutX="697.0" layoutY="8.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="84.0" text="Wyloguj" />
+
 </AnchorPane>

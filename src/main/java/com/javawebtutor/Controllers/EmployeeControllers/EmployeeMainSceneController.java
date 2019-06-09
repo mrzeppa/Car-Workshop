@@ -29,10 +29,6 @@ public class EmployeeMainSceneController extends Controller {
         this.changeScene(event, "/EmployeeCheckCarRepairStateScene.fxml");
     }
 
-    public void logOutButton(ActionEvent event) throws IOException {
-        this.logOut();
-        this.changeScene(event, "/FirstScene.fxml");
-    }
 
     public void checkUsers(ActionEvent event) throws IOException {
         this.changeScene(event, "/EmployeeCheckUsersScene.fxml");

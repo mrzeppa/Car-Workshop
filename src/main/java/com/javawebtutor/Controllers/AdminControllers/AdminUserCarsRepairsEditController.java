@@ -2,10 +2,7 @@ package com.javawebtutor.Controllers.AdminControllers;
 
 import com.javawebtutor.Controllers.Controller;
 import com.javawebtutor.Controllers.EmployeeControllers.EmployeeCheckCarRepairStateController;
-import com.javawebtutor.Models.Cars;
-import com.javawebtutor.Models.Repairs;
-import com.javawebtutor.Models.RepairsState;
-import com.javawebtutor.Models.States;
+import com.javawebtutor.Models.*;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -16,7 +13,11 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
@@ -29,6 +30,7 @@ public class AdminUserCarsRepairsEditController extends Controller implements In
     @FXML private TextField carModel;
     @FXML private TextField carMark;
     @FXML private TextField course;
+    @FXML private TextField price;
     @FXML private TextArea repairCauses;
     public void buttonAction(){
         edit();
@@ -40,10 +42,8 @@ public class AdminUserCarsRepairsEditController extends Controller implements In
 
     public void loadData(){
         List<States> s = Controller.loadAllData(States.class, session);
-        System.out.println(s.size());
         session = factory.getCurrentSession();
         session.getTransaction().begin();
-        System.out.println(session.isConnected());
         Cars car = session.get(Cars.class, AdminUserCarsController.carId);
         Repairs r1 = session.get(Repairs.class, car.getCars());
         RepairsState rs1 = session.get(RepairsState.class, r1.getRepairId());
@@ -52,6 +52,7 @@ public class AdminUserCarsRepairsEditController extends Controller implements In
         carMark.setText(car.getCarModels().getCarMarks().getMarkName());
         course.setText(car.getCourse());
         repairCauses.setText(rs1.getRepairId().getRepairCauses());
+        price.setText(Integer.toString(car.getRepairs().get(0).getPrice()));
 
         for(States states : s){
             repairState.getItems().add(states.getName());
@@ -67,6 +68,7 @@ public class AdminUserCarsRepairsEditController extends Controller implements In
         session.close();
     }
 
+
     public void edit(){
         session = factory.getCurrentSession();
         session.getTransaction().begin();
@@ -76,7 +78,7 @@ public class AdminUserCarsRepairsEditController extends Controller implements In
         States s1 = session.get(States.class, 1);
         States s2 = session.get(States.class, 2);
         States s3 = session.get(States.class, 3);
-
+        car.getRepairs().get(0).setPrice(Integer.parseInt(price.getText()));
         car.setCourse(course.getText());
         car.getCarModels().setModelName(carModel.getText());
         car.getCarModels().getCarMarks().setMarkName(carMark.getText());

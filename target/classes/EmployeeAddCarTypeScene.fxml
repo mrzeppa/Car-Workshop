@@ -2,20 +2,22 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<ScrollPane fx:id="sp1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.EmployeeControllers.EmployeeAddCarTypeController">
-    <content>
-        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="375.0" prefWidth="550.0" translateX="25.0" translateY="25.0">
-            <children>
-                <TextField fx:id="carMark" layoutX="31.0" layoutY="84.0" />
-                <TextField fx:id="carModel" layoutX="300.0" layoutY="127.0" />
-            <Button layoutX="355.0" layoutY="175.0" mnemonicParsing="false" onAction="#addCar" text="Dodaj marke" />
-            <ChoiceBox fx:id="carMarkList" layoutX="300.0" layoutY="84.0" prefWidth="150.0" />
-            <Button layoutX="80.0" layoutY="175.0" mnemonicParsing="false" onAction="#addCarMark" text="Dodaj model" />
-            </children>
-        </AnchorPane>
-    </content>
-</ScrollPane>
+<AnchorPane fx:id="sp1" maxHeight="Infinity" maxWidth="Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="styles/EmployeeAddCarTypeStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.EmployeeControllers.EmployeeAddCarTypeController">
+    <children>
+        <TextField fx:id="carMark" layoutX="132.0" layoutY="256.0" />
+        <TextField fx:id="carModel" layoutX="446.0" layoutY="256.0" />
+    <Button layoutX="476.0" layoutY="300.0" mnemonicParsing="false" onAction="#addCar" text="Dodaj marke" />
+    <ChoiceBox fx:id="carMarkList" layoutX="445.0" layoutY="206.0" prefWidth="150.0" />
+    <Button layoutX="162.0" layoutY="300.0" mnemonicParsing="false" onAction="#addCarMark" text="Dodaj model" />
+      <Label layoutX="132.0" layoutY="239.0" text="Model samochodu" />
+      <Label layoutX="446.0" layoutY="189.0" text="Model samochodu" />
+      <Label layoutX="446.0" layoutY="239.0" text="Marka samochodu" />
+      <Button layoutX="738.0" layoutY="524.0" mnemonicParsing="false" text="Wroc" onAction="#backButton" />
+        <Button layoutX="697.0" layoutY="8.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="84.0" text="Wyloguj" />
+
+    </children>
+</AnchorPane>

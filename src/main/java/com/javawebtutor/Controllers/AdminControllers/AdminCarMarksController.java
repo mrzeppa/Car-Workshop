@@ -13,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -25,6 +26,8 @@ import java.util.ResourceBundle;
 public class AdminCarMarksController extends Controller implements Initializable {
     public static int carMarkId;
     SessionFactory factory = HibernateUtil.getSessionFactory();
+    @FXML
+    TextField carMarkTextField;
     @FXML
     private TableView<CarMarksView> tv1;
     @FXML
@@ -45,9 +48,9 @@ public class AdminCarMarksController extends Controller implements Initializable
         session.getTransaction().begin();
         tv1.setItems(personData);
         for(CarMarks cm : cars){
-            Button b1 = new Button("hehe");
-            Button b2 = new Button("hehe");
-            Button b3 = new Button("edit");
+            Button b1 = new Button("Modele");
+            Button b2 = new Button("Usun");
+            Button b3 = new Button("Edytuj");
             b1.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
@@ -66,6 +69,11 @@ public class AdminCarMarksController extends Controller implements Initializable
                 public void handle(ActionEvent event) {
                     carMarkId = cm.getCarMarkId();
                     delete(cm);
+                    try {
+                        changeScene(event, "/AdminCarMarksScene.fxml");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             });
 
@@ -93,6 +101,17 @@ public class AdminCarMarksController extends Controller implements Initializable
 
     public void backButton(ActionEvent event) throws IOException {
         changeScene(event, "/AdminMainScene.fxml");
+    }
+
+    public void addCarMark(ActionEvent event) throws IOException {
+        Session session = factory.getCurrentSession();
+        session.getTransaction().begin();
+        CarMarks cm = new CarMarks(carMarkTextField.getText());
+        session.save(cm);
+        session.getTransaction().commit();
+        session.close();
+        changeScene(event, "/AdminCarMarksScene.fxml");
+
     }
 
     public void delete(CarMarks cm) {

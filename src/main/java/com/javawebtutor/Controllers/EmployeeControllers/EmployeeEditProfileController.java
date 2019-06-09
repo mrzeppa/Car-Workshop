@@ -10,6 +10,7 @@ import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.hibernate.Session;
@@ -31,6 +32,8 @@ public class EmployeeEditProfileController extends Controller implements Initial
     @FXML private TextField city;
     @FXML private TextField login;
     @FXML private PasswordField password;
+    @FXML private TextField email;
+    @FXML private Label emailWarning;
 
     public void initialize(URL location, ResourceBundle resources) {
 //        relation tests ------- it works.
@@ -55,6 +58,7 @@ public class EmployeeEditProfileController extends Controller implements Initial
         postCode.setText(Integer.toString(list.get(0).getAddress().getPostCode()));
         city.setText(list.get(0).getAddress().getCity());
         login.setText(list.get(0).getLogin());
+        email.setText(list.get(0).getEmail());
 //
 //        Invoices ron1;
 //        ron1 = session.get(Invoices.class, 1);
@@ -65,20 +69,27 @@ public class EmployeeEditProfileController extends Controller implements Initial
     }
 
     public void editData(){
-        Session session = factory.getCurrentSession();
-        session.getTransaction().begin();
-        Users user;
-        user = session.get(Users.class, LogInController.loggedUserId);
-        user.setName(name.getText());
-        user.setSurname(surname.getText());
-        user.getAddress().setStreet(street.getText());
-        user.getAddress().setHomeNumber(Integer.parseInt(homeNumber.getText()));
-        user.getAddress().setPostCode(Integer.parseInt(postCode.getText()));
-        user.getAddress().setCity(city.getText());
-        if(!password.getText().equals(""))
-            user.setPassword(password.getText());
-        session.getTransaction().commit();
-        session.close();
+        if(email.getText().matches("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")) {
+
+            Session session = factory.getCurrentSession();
+            session.getTransaction().begin();
+            Users user;
+            user = session.get(Users.class, LogInController.loggedUserId);
+            user.setName(name.getText());
+            user.setSurname(surname.getText());
+            user.getAddress().setStreet(street.getText());
+            user.getAddress().setHomeNumber(Integer.parseInt(homeNumber.getText()));
+            user.setEmail(email.getText());
+            user.getAddress().setPostCode(Integer.parseInt(postCode.getText()));
+            user.getAddress().setCity(city.getText());
+            if (!password.getText().equals(""))
+                user.setPassword(password.getText());
+            session.getTransaction().commit();
+            session.close();
+        }
+        else{
+            emailWarning.setText("Niepoprawny email!");
+        }
     }
 
     public void backButton(ActionEvent event) throws IOException {

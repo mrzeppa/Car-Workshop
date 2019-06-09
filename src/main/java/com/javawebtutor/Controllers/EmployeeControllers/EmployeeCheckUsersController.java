@@ -50,9 +50,9 @@ public class EmployeeCheckUsersController extends Controller implements Initiali
         List<Users> users = loadAllData(Users.class, session);
         tv1.setItems(personData);
         for(Users u : users) {
-            Button b1 = new Button("text");
-            Button b2 = new Button("car");
-            Button b3 = new Button("invoice");
+            Button b1 = new Button("Samochody");
+            Button b2 = new Button("Dodaj samochod");
+            Button b3 = new Button("Faktury");
             b1.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
@@ -101,6 +101,10 @@ public class EmployeeCheckUsersController extends Controller implements Initiali
 
     public void addUser(ActionEvent event) throws IOException {
         changeScene(event, "/EmployeeAddUserScene.fxml");
+    }
+
+    public void backButton(ActionEvent event) throws IOException {
+        this.changeScene(event, "/EmployeeMainScene.fxml");
     }
 
 

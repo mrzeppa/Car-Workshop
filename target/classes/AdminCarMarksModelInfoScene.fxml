@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminCarMarksModelInfoController" prefHeight="400.0" prefWidth="600.0">
-    <TableView fx:id="tv1" layoutX="88.0" layoutY="66.0" prefHeight="200.0" prefWidth="374.0">
+<AnchorPane stylesheets="styles/AdminCarMarksModelInfoStyle.css" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminCarMarksModelInfoController">
+    <TableView fx:id="tv1" layoutX="58.0" layoutY="185.0" prefHeight="200.0" prefWidth="374.0">
         <columns>
             <TableColumn fx:id="mark" prefWidth="75.0" text="Marka" />
             <TableColumn fx:id="button1" prefWidth="75.0" text="1" />
             <TableColumn fx:id="button2" prefWidth="75.0" text="2" />
-            <TableColumn fx:id="button3" prefWidth="75.0" text="3" />
 
         </columns>
     </TableView>
-    <Button layoutX="369.0" layoutY="343.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+    <Button layoutX="710.0" layoutY="522.0" mnemonicParsing="false" onAction="#backButton" text="Wroc" />
+   <Button layoutX="293.0" layoutY="416.0" mnemonicParsing="false" onAction="#addCarModel" text="Dodaj" />
+   <TextField fx:id="carModelTextField" layoutX="96.0" layoutY="422.0" />
+   <Label layoutX="96.0" layoutY="399.0" text="Dodaj model samochodu" />
+    <Button layoutX="697.0" layoutY="8.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="84.0" text="Wyloguj" />
+
 </AnchorPane>

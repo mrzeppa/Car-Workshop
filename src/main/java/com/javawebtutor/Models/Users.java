@@ -33,6 +33,9 @@ public class Users {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "email")
+    private String email;
+
     @Column(name = "passwordActivated")
     private int passwordActivated;
 
@@ -111,18 +114,11 @@ public class Users {
         this.address = address;
     }
 
-    @Override
-    public String toString() {
-        return "Users{" +
-                "userId=" + userId +
-                ", roles=" + roles +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", address=" + address +
-                ", login='" + login + '\'' +
-                ", password='" + password + '\'' +
-                ", passwordActivated=" + passwordActivated +
-                ", cars=" + cars +
-                '}';
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

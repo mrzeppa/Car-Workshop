@@ -195,7 +195,8 @@ public class EmployeeAddInvoiceController extends Controller implements Initiali
                     "</html>" +
 
                     "");
-            OutputStream output = new FileOutputStream("testa.pdf");
+            String filename = "FA-" + in.getInvoiceId() + ".pdf";
+            OutputStream output = new FileOutputStream(filename);
             HtmlConverter.convertToPdf(sb.toString(), output);
 
             session.close();
@@ -204,5 +205,8 @@ public class EmployeeAddInvoiceController extends Controller implements Initiali
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    public void backButton(ActionEvent event) throws IOException {
+        changeScene(event, "/EmployeeCheckUsersScene.fxml");
     }
 }

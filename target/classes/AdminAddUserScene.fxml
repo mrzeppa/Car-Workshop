@@ -2,20 +2,34 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminAddUserController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="styles/AdminAddUserStyle.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminAddUserController">
     <children>
-        <TextField fx:id="name" layoutX="35.0" layoutY="36.0" promptText="Imie" />
-        <TextField fx:id="surname" layoutX="35.0" layoutY="88.0" promptText="Nazwisko" />
-        <TextField fx:id="street" layoutX="226.0" layoutY="36.0" promptText="Ulica" />
-        <TextField fx:id="homeNumber" layoutX="226.0" layoutY="88.0" promptText="Numer mieszkania" />
-        <TextField fx:id="login" layoutX="412.0" layoutY="36.0" promptText="Login" />
-        <TextField fx:id="postCode" layoutX="226.0" layoutY="140.0" promptText="Kod pocztowy" />
-        <TextField fx:id="city" layoutX="226.0" layoutY="188.0" promptText="Miejscowosc" />
-        <Button layoutX="375.0" layoutY="301.0" mnemonicParsing="false" onAction="#register" text="Rejestruj" />
-      <ChoiceBox fx:id="cbx" layoutX="412.0" layoutY="88.0" prefWidth="150.0" />
+        <TextField fx:id="name" layoutX="35.0" layoutY="182.0" />
+        <TextField fx:id="surname" layoutX="35.0" layoutY="241.0" />
+        <TextField fx:id="street" layoutX="216.0" layoutY="182.0" />
+        <TextField fx:id="homeNumber" layoutX="216.0" layoutY="241.0" />
+        <TextField fx:id="login" layoutX="391.0" layoutY="242.0" />
+        <TextField fx:id="postCode" layoutX="216.0" layoutY="300.0" />
+        <TextField fx:id="city" layoutX="216.0" layoutY="359.0" />
+        <Button layoutX="562.0" layoutY="524.0" mnemonicParsing="false" onAction="#register" text="Rejestruj" />
+      <ChoiceBox fx:id="cbx" layoutX="390.0" layoutY="301.0" prefWidth="150.0" />
+      <Label layoutX="40.0" layoutY="158.0" text="Imie" />
+      <Label layoutX="38.0" layoutY="217.0" text="Nazwisko" />
+      <Label layoutX="229.0" layoutY="158.0" text="Ulica" />
+      <Label layoutX="228.0" layoutY="217.0" text="Numer mieszkania" />
+      <Label layoutX="224.0" layoutY="277.0" text="Kod pocztowy" />
+      <Label layoutX="228.0" layoutY="334.0" text="Miejscowosc" />
+      <Label layoutX="398.0" layoutY="217.0" text="Login" />
+      <Label layoutX="398.0" layoutY="277.0" text="Ranga" />
+      <Button layoutX="708.0" layoutY="524.0" mnemonicParsing="false" onAction="#backButton" text="Wroc" />
+        <Label layoutX="398.0" layoutY="158.0" prefHeight="17.0" prefWidth="198.0" text="Email (example@example.example)" />
+        <TextField fx:id="email" layoutX="391.0" layoutY="182.0" />
+        <Label fx:id="emailWarning" layoutX="40.0" layoutY="282.0" prefHeight="25.0" prefWidth="139.0" />
+        <Button layoutX="697.0" layoutY="8.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="84.0" text="Wyloguj" />
     </children>
 
 </AnchorPane>

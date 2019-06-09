@@ -29,6 +29,7 @@ public class EmployeeCheckCarRepairStateEditController extends Controller implem
     @FXML private TextField carMark;
     @FXML private TextField course;
     @FXML private TextArea repairCauses;
+    @FXML private TextField price;
     public void buttonAction(){
         edit();
     }
@@ -51,6 +52,7 @@ public class EmployeeCheckCarRepairStateEditController extends Controller implem
         carMark.setText(car.getCarModels().getCarMarks().getMarkName());
         course.setText(car.getCourse());
         repairCauses.setText(rs1.getRepairId().getRepairCauses());
+        price.setText(Integer.toString(r1.getPrice()));
 
         for(States states : s){
             repairState.getItems().add(states.getName());
@@ -75,7 +77,7 @@ public class EmployeeCheckCarRepairStateEditController extends Controller implem
         States s1 = session.get(States.class, 1);
         States s2 = session.get(States.class, 2);
         States s3 = session.get(States.class, 3);
-
+        r1.setPrice(Integer.parseInt(price.getText()));
         car.setCourse(course.getText());
         car.getCarModels().setModelName(carModel.getText());
         car.getCarModels().getCarMarks().setMarkName(carMark.getText());

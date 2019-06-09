@@ -54,8 +54,8 @@ public class EmployeeCheckCarRepairStateController extends Controller implements
         for (Cars car : carList) {
             Repairs r1;
             RepairsState rs1;
-            Button b1 = new Button("text");
-            Button b2 = new Button("t2");
+            Button b1 = new Button("Usun");
+            Button b2 = new Button("Edytuj");
             r1 = session.get(Repairs.class, car.getCars());
             rs1 = session.get(RepairsState.class, r1.getRepairId());
             b1.setOnAction(new EventHandler<ActionEvent>() {
@@ -116,9 +116,11 @@ public class EmployeeCheckCarRepairStateController extends Controller implements
 
     public void edit(Cars car, ActionEvent event) throws IOException {
         carId = car.getCars();
-        this.changeScene(event, "/EmployeeCheckCarRepairStateEditScene.fxml");
+        changeScene(event, "/EmployeeCheckCarRepairStateEditScene.fxml");
 
     }
-
+    public void backButton(ActionEvent event) throws IOException {
+        changeScene(event, "/EmployeeMainScene.fxml");
+    }
 
 }

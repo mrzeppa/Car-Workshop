@@ -20,10 +20,6 @@ public class ClientMainSceneController extends Controller {
         this.changeScene(event, "/ClientCheckCarRepairStateScene.fxml");
     }
 
-    public void logOutButton(ActionEvent event) throws IOException {
-        this.logOut();
-        this.changeScene(event, "/FirstScene.fxml");
-    }
 
 
 }

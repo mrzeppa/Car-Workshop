@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminUserCarsEditController" prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="styles/AdminUserCarsEditStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.AdminControllers.AdminUserCarsEditController">
     <children>
         <Label fx:id="l1" layoutY="39.0" prefHeight="331.0" prefWidth="550.0" />
-        <TableView fx:id="tv1" layoutX="88.0" layoutY="66.0" prefHeight="200.0" prefWidth="374.0">
+        <TableView fx:id="tv1" layoutX="54.0" layoutY="149.0" prefHeight="312.0" prefWidth="693.0">
             <columns>
                 <TableColumn fx:id="tab2" prefWidth="75.0" text="Marka" />
                 <TableColumn fx:id="tab1" prefWidth="75.0" text="Model" />
                 <TableColumn fx:id="tab3" prefWidth="75.0" text="Opis" />
                 <TableColumn fx:id="tab4" prefWidth="75.0" text="Realizacja" />
                 <TableColumn fx:id="tab5" prefWidth="75.0" text="Cena" />
-                <TableColumn fx:id="tab6" prefWidth="75.0" text="edit" />
-                <TableColumn fx:id="tab7" prefWidth="75.0" text="delete" />
+                <TableColumn fx:id="tab6" prefWidth="75.0" />
+                <TableColumn fx:id="tab7" prefWidth="75.0" />
             </columns>
         </TableView>
-        <Button layoutX="340.0" layoutY="316.0" mnemonicParsing="false" onAction="#backButton" text="Button" />
+        <Button layoutX="724.0" layoutY="525.0" mnemonicParsing="false" onAction="#backButton" text="Wroc" />
+        <Button layoutX="697.0" layoutY="8.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="84.0" text="Wyloguj" />
+
     </children>
 </AnchorPane>

@@ -49,19 +49,15 @@ public class LogInController extends Controller {
     public boolean logIn(){
 
         if(checkLoggingIn(login.getText(), password.getText()) == 1) {
-//            changeScene(event, "/ActivatePasswordScene.fxml");
             System.out.println("zalogowano");
             session.close();
             return true;
-
         }
         else{
             System.out.println("zle dane logowania");
-//            session.getTransaction().rollback();
         }
         session.close();
         return false;
-//
     }
 
     public int checkLoggingIn(String login, String password){
@@ -78,18 +74,19 @@ public class LogInController extends Controller {
         Query<Users> q = session.createQuery(cr);
         List<Users> results = q.getResultList();
         session.close();
-//        System.out.println(results.get(0).toString());
 
         if(results.size() > 0) {
             loggedUserId = results.get(0).getUserId();
             loggedUserRoleId = results.get(0).getRoles().getRoleId();
             passwordActivated = results.get(0).getPasswordActivated();
-//            System.out.println(passwordActivated);
         }
         else
             return 0;
         return results.size();
     }
 
+    public void backButton(ActionEvent event) throws IOException {
+        changeScene(event, "/FirstScene.fxml");
+    }
 
 }

@@ -195,7 +195,8 @@ public class AdminCreateInvoiceController extends Controller implements Initiali
                     "</html>" +
 
                     "");
-            OutputStream output = new FileOutputStream("testa.pdf");
+            String filename = "FA-" + in.getInvoiceId() + ".pdf";
+            OutputStream output = new FileOutputStream(filename);
             HtmlConverter.convertToPdf(sb.toString(), output);
 
             session.close();

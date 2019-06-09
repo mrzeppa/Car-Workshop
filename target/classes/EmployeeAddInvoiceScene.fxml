@@ -6,17 +6,20 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.EmployeeControllers.EmployeeAddInvoiceController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="styles/EmployeeAddInvoiceStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.Controllers.EmployeeControllers.EmployeeAddInvoiceController">
     <children>
         <Label fx:id="l1" layoutY="39.0" prefHeight="331.0" prefWidth="550.0" />
-        <TableView fx:id="tv1" layoutX="88.0" layoutY="66.0" prefHeight="200.0" prefWidth="374.0">
+        <TableView fx:id="tv1" layoutX="188.0" layoutY="164.0" prefHeight="200.0" prefWidth="374.0">
             <columns>
                 <TableColumn fx:id="mark" prefWidth="75.0" text="Marka" />
                 <TableColumn fx:id="model" prefWidth="75.0" text="Model" />
                 <TableColumn fx:id="cb" prefWidth="75.0" />
             </columns>
         </TableView>
-      <Button layoutX="462.0" layoutY="300.0" mnemonicParsing="false" onAction="#generatePDF" text="Generuj fakture" />
+      <Button layoutX="562.0" layoutY="527.0" mnemonicParsing="false" onAction="#generatePDF" text="Generuj fakture" />
+      <Button layoutX="718.0" layoutY="527.0" mnemonicParsing="false" text="Wroc" onAction="#backButton"/>
         <!--<Button layoutX="340.0" layoutY="316.0" mnemonicParsing="false" onAction="#backButton" text="Button" />-->
+        <Button layoutX="697.0" layoutY="8.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="84.0" text="Wyloguj" />
+
     </children>
 </AnchorPane>
