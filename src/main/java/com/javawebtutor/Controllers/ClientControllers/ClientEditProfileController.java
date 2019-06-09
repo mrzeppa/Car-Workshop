@@ -2,6 +2,7 @@ package com.javawebtutor.Controllers.ClientControllers;
 
 import com.javawebtutor.Controllers.Controller;
 import com.javawebtutor.Controllers.LogInController;
+import com.javawebtutor.Controllers.PopUpController;
 import com.javawebtutor.Models.Users;
 import com.javawebtutor.Utilities.HibernateUtil;
 import javafx.event.ActionEvent;
@@ -52,7 +53,7 @@ public class ClientEditProfileController extends Controller implements Initializ
         session.close();
     }
 
-    public void editData(){
+    public void editData() throws IOException {
         if(email.getText().matches("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")) {
 
             Session session = factory.getCurrentSession();
@@ -68,11 +69,16 @@ public class ClientEditProfileController extends Controller implements Initializ
             user.getAddress().setCity(city.getText());
             if (!password.getText().equals(""))
                 user.setPassword(password.getText());
+            PopUpController pop = new PopUpController();
+            PopUpController.content = "Poprawione";
+            pop.popUp();
             session.getTransaction().commit();
             session.close();
         }
         else{
-            emailWarning.setText("Niepoprawny email!");
+            PopUpController pop = new PopUpController();
+            PopUpController.content = "Niepoprawny email";
+            pop.popUp();
         }
     }
 

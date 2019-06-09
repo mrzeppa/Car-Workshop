@@ -23,7 +23,7 @@
       <Label layoutX="287.0" layoutY="334.0" text="Miejscowosc" />
       <Label layoutX="457.0" layoutY="217.0" text="Login" />
       <Label layoutX="457.0" layoutY="276.0" text="Haslo" />
-      <Button layoutX="725.0" layoutY="526.0" mnemonicParsing="false" text="Wroc" />
+      <Button layoutX="725.0" layoutY="526.0" mnemonicParsing="false" onAction="#backButton" text="Wroc" />
       <Button layoutX="566.0" layoutY="526.0" mnemonicParsing="false" onAction="#register" text="Rejestruj" />
       <PasswordField fx:id="password" layoutX="448.0" layoutY="300.0" />
       <TextField fx:id="email" layoutX="448.0" layoutY="182.0" />

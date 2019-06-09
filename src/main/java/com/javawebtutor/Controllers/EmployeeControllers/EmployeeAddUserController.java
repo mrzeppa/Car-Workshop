@@ -1,6 +1,7 @@
 package com.javawebtutor.Controllers.EmployeeControllers;
 
 import com.javawebtutor.Controllers.Controller;
+import com.javawebtutor.Controllers.PopUpController;
 import com.javawebtutor.Models.Address;
 import com.javawebtutor.Models.Roles;
 import com.javawebtutor.Models.Users;
@@ -31,7 +32,7 @@ public class EmployeeAddUserController extends Controller {
     @FXML private Label emailWarning;
 
 
-    public void register(){
+    public void register() throws IOException {
         Session session = factory.getCurrentSession();
         session.getTransaction().begin();
         if(checkLogin(login.getText()) == 0) {
@@ -55,9 +56,14 @@ public class EmployeeAddUserController extends Controller {
                 u1.setEmail(email.getText());
                 session.save(u1);
                 session.getTransaction().commit();
+                PopUpController pop = new PopUpController();
+                PopUpController.content = "Dodano";
+                pop.popUp();
             }
             else{
-                emailWarning.setText("Niepoprawny email!");
+                PopUpController pop = new PopUpController();
+                PopUpController.content = "Niepoprawny email";
+                pop.popUp();
             }
         }
         else{

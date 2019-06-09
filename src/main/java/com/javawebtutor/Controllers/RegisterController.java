@@ -29,6 +29,7 @@ public class RegisterController extends Controller {
     @FXML private PasswordField password;
     @FXML private Label emailWarning;
     @FXML private TextField email;
+    @FXML private Label message;
 
 
     public void register(ActionEvent event) throws IOException {
@@ -55,10 +56,15 @@ public class RegisterController extends Controller {
                 u1.setEmail(email.getText());
                 session.save(u1);
                 session.getTransaction().commit();
+                PopUpController pop = new PopUpController();
+                PopUpController.content = "Dodano";
+                pop.popUp();
                 changeScene(event, "/FirstScene.fxml");
             }
             else{
-                emailWarning.setText("Zly email!");
+                PopUpController pop = new PopUpController();
+                PopUpController.content = "Niepoprawny email";
+                pop.popUp();
             }
         }
         else{
@@ -72,6 +78,10 @@ public class RegisterController extends Controller {
         List<Users> list = factory.getCurrentSession()
         .createQuery("from " + Users.class.getName() + " WHERE login = '" + login + "'").list();
         return list.size();
+    }
+
+    public void backButton(ActionEvent event) throws IOException {
+        changeScene(event, "/FirstScene.fxml");
     }
 
 }

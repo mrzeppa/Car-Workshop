@@ -31,7 +31,6 @@ public class LogInController extends Controller {
 
     public void buttonAction(ActionEvent event) throws IOException {
         logIn();
-        System.out.println(passwordActivated);
         if(passwordActivated == 0 && checkLoggingIn(login.getText(), password.getText()) == 1){
             changeScene(event, "/ActivatePasswordScene.fxml");
         }
@@ -46,15 +45,16 @@ public class LogInController extends Controller {
     }
 
 
-    public boolean logIn(){
+    public boolean logIn() throws IOException {
 
         if(checkLoggingIn(login.getText(), password.getText()) == 1) {
-            System.out.println("zalogowano");
             session.close();
             return true;
         }
         else{
-            System.out.println("zle dane logowania");
+            PopUpController pop = new PopUpController();
+            PopUpController.content = "Zle dane logowania";
+            pop.popUp();
         }
         session.close();
         return false;

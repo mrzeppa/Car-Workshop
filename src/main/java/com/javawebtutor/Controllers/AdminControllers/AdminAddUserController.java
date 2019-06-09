@@ -1,6 +1,7 @@
 package com.javawebtutor.Controllers.AdminControllers;
 
 import com.javawebtutor.Controllers.Controller;
+import com.javawebtutor.Controllers.PopUpController;
 import com.javawebtutor.Models.Address;
 import com.javawebtutor.Models.Roles;
 import com.javawebtutor.Models.Users;
@@ -48,7 +49,7 @@ public class AdminAddUserController extends Controller implements Initializable 
     }
 
 
-    public void register(){
+    public void register() throws IOException {
         Session session = factory.getCurrentSession();
 
         session.getTransaction().begin();
@@ -79,9 +80,14 @@ public class AdminAddUserController extends Controller implements Initializable 
                 u1.setEmail(email.getText());
                 session.save(u1);
                 session.getTransaction().commit();
+                PopUpController pop = new PopUpController();
+                PopUpController.content = "Dodano";
+                pop.popUp();
             }
             else{
-                emailWarning.setText("Email niepoprawny!");
+                PopUpController pop = new PopUpController();
+                PopUpController.content = "Niepoprawny email";
+                pop.popUp();
             }
         }
         else{

@@ -2,6 +2,7 @@ package com.javawebtutor.Controllers.EmployeeControllers;
 
 import com.javawebtutor.Controllers.Controller;
 import com.javawebtutor.Controllers.LogInController;
+import com.javawebtutor.Controllers.PopUpController;
 import com.javawebtutor.Models.Invoices;
 import com.javawebtutor.Models.Repairs;
 import com.javawebtutor.Models.RepairsOnInvoice;
@@ -68,7 +69,7 @@ public class EmployeeEditProfileController extends Controller implements Initial
         session.close();
     }
 
-    public void editData(){
+    public void editData() throws IOException {
         if(email.getText().matches("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")) {
 
             Session session = factory.getCurrentSession();
@@ -86,9 +87,14 @@ public class EmployeeEditProfileController extends Controller implements Initial
                 user.setPassword(password.getText());
             session.getTransaction().commit();
             session.close();
+            PopUpController pop = new PopUpController();
+            PopUpController.content = "Poprawione";
+            pop.popUp();
         }
         else{
-            emailWarning.setText("Niepoprawny email!");
+            PopUpController pop = new PopUpController();
+            PopUpController.content = "Niepoprawny email";
+            pop.popUp();
         }
     }
 

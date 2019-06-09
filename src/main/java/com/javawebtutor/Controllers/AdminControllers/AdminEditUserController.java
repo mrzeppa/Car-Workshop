@@ -1,6 +1,7 @@
 package com.javawebtutor.Controllers.AdminControllers;
 
 import com.javawebtutor.Controllers.Controller;
+import com.javawebtutor.Controllers.PopUpController;
 import com.javawebtutor.Models.CarMarks;
 import com.javawebtutor.Models.Roles;
 import com.javawebtutor.Models.Users;
@@ -63,7 +64,7 @@ public class AdminEditUserController extends Controller implements Initializable
         session.close();
     }
 
-    public void editData(){
+    public void editData() throws IOException {
         if(email.getText().matches("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")) {
             Session session = factory.getCurrentSession();
             session.getTransaction().begin();
@@ -86,12 +87,16 @@ public class AdminEditUserController extends Controller implements Initializable
             List<Roles> results = q.getResultList();
 
             user.setRoles(results.get(0));
-
+            PopUpController pop = new PopUpController();
+            PopUpController.content = "Poprawione";
+            pop.popUp();
             session.getTransaction().commit();
             session.close();
         }
         else{
-            emailWarning.setText("Niepoprawny email!");
+            PopUpController pop = new PopUpController();
+            PopUpController.content = "Niepoprawny email";
+            pop.popUp();
         }
     }
 
